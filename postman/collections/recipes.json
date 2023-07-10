@@ -1,0 +1,877 @@
+{
+	"info": {
+		"_postman_id": "b3173837-18c1-46e9-bae6-c4885431f9a6",
+		"name": "recipes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "8252115-b3173837-18c1-46e9-bae6-c4885431f9a6"
+	},
+	"item": [
+		{
+			"name": "core",
+			"item": [
+				{
+					"name": "add image",
+					"id": "ba7ca5e4-79cd-475f-b46f-19c6ba578fbe",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "recipeItem",
+									"type": "file",
+									"src": "/Users/blinkfix.me/Downloads/3368128-top-view-of-tasty-meat-medallions-with-herbs-on-plate-photocase-stock-photo-large.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{host}}/api/v1/recipes/addPhotoToRecipe/635b2b0d9708a3d8663effb1",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"recipes",
+								"addPhotoToRecipe",
+								"635b2b0d9708a3d8663effb1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add recipe",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "1a25c74f-3cbf-4d37-a31c-51a8215d1c3c",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "b63ead1f-c9d9-4675-bfd5-4a74bae7b387",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isEstablishment\": true,\r\n    \"title\": \"tester\",\r\n    \"description\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, obcaecati eligendi autem in vitae dolore nulla\",\r\n    \"dishesType\": \"Occasion\",\r\n    \"cuisineCode\": \"pl\",\r\n    \"advancement\": \"3\",\r\n    \"prepTime\": \"00:14\",\r\n    \"cookTime\": \"02:00\",\r\n    \"serves\": 4,\r\n    \"ingredientsList\": [\r\n        {\r\n            \"isTips\": false,\r\n            \"qtt\": 10,\r\n            \"name\": \"sugar\"\r\n        },\r\n        {\r\n            \"isTips\": false,\r\n            \"qtt\": 10,\r\n            \"name\": \"milk\"\r\n        },\r\n        {\r\n            \"isTips\": false,\r\n            \"qtt\": 10,\r\n            \"name\": \"milk\"\r\n        },\r\n        {\r\n            \"isTips\": false,\r\n            \"qtt\": 10,\r\n            \"name\": \"milk\"\r\n        },\r\n        {\r\n            \"isTips\": false,\r\n            \"qtt\": 10,\r\n            \"name\": \"milk\"\r\n        }\r\n    ],\r\n    \"manualList\": [\r\n        {\r\n            \"stepNumber\": 1,\r\n            \"description\": \"new description of step 1\"\r\n        },\r\n        {\r\n            \"stepNumber\": 2,\r\n            \"description\": \"new description of step 2\"\r\n        },\r\n        {\r\n            \"stepNumber\": 3,\r\n            \"description\": \"new description of step 3\"\r\n        }\r\n    ],\r\n    \"tipTitle\": \"extra step for perfect taste\",\r\n    \"tipDescription\": \"somethingLike that\",\r\n    \"tipIngredientsList\": [\r\n        {\r\n            \"qtt\": 10,\r\n            \"unit\": \"sp.\",\r\n            \"name\": \"sugar\"\r\n        },\r\n        {\r\n            \"qtt\": 10,\r\n            \"unit\": \"l\",\r\n            \"name\": \"milk\"\r\n        }\r\n    ],\r\n    \"tipManualList\": [\r\n        {\r\n            \"stepNumber\": 1,\r\n            \"description\": \"new description of step 1\"\r\n        },\r\n        {\r\n            \"stepNumber\": 2,\r\n            \"description\": \"new description of step 2\"\r\n        },\r\n        {\r\n            \"stepNumber\": 3,\r\n            \"description\": \"new description of step 3\"\r\n        }\r\n    ],\r\n    \"tags\": [\r\n        \"newTag\",\r\n        \"dupa2aaa123123a\",\r\n        \"suop\",\r\n        \"tomato soup\",\r\n        \"kremowy\"\r\n    ],\r\n        \"isKosher\": true,\r\n        \"isVegan\": true,\r\n        \"isHalal\": true\r\n}"
+						},
+						"url": {
+							"raw": "https://{{host}}/api/v1/recipes/recipe",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"recipes",
+								"recipe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update recipe",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "9dc30aa2-cd63-4c0a-a118-13ba43e51b37",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "3a03c704-a678-454a-8c73-9baaf0e33b3e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"owner\":\"62d177340ab9f59cae27c258\",\r\n    \"title\":\"tester dupa 2 gowno 3\",\r\n    \"description\":\"gowno 2\",\r\n    \"dishesType\":\"Occasion\",\r\n    \"cuisineCode\":\"pl\",\r\n    \"advancement\":\"5\",\r\n    \"prepTime\":\"00:14\",\r\n    \"cookTime\":\"02:00\",\r\n    \"serves\":4,\r\n    \"ingredientsList\":[\r\n        {   \r\n            \"isTips\":false,\r\n            \"qtt\":10,\r\n            \"name\":\"sugar\"\r\n        },\r\n        {\r\n            \"isTips\":false,\r\n            \"qtt\":10,\r\n            \"name\":\"milk\"\r\n        }\r\n    ],\r\n    \"manualList\":[\r\n        {\r\n            \"stepNumber\":1,\r\n            \"description\":\"new description of step 1\"\r\n        },\r\n        {\r\n            \"stepNumber\":2,\r\n            \"description\":\"new description of step 2\"\r\n        },\r\n        {\r\n            \"stepNumber\":3,\r\n            \"description\":\"new description of step 3\"\r\n        }\r\n    ],\r\n    \"tipTitle\":\"extra step for perfect taste\",\r\n    \"tipDescription\":\"somethingLike that\",\r\n    \"tipIngredientsList\":[\r\n        {   \r\n            \"qtt\":10,\r\n            \"unit\":\"sp.\",\r\n            \"name\":\"sugar\"\r\n        },\r\n        {\r\n            \"qtt\":10,\r\n            \"unit\":\"l\",\r\n            \"name\":\"milk\"\r\n        }\r\n    ],\r\n    \"tipManualList\":[\r\n        {\r\n            \"stepNumber\":1,\r\n            \"description\":\"new description of step 1\"\r\n        },\r\n        {\r\n            \"stepNumber\":2,\r\n            \"description\":\"new description of step 2\"\r\n        },\r\n        {\r\n            \"stepNumber\":3,\r\n            \"description\":\"new description of step 3\"\r\n        }\r\n    ],\r\n    \"tags\":[\"monday\",\"suop\",\"tomato soup\",\"kremowy\"]\r\n}"
+						},
+						"url": {
+							"raw": "http://{{host}}/api/v1/recipes/recipe/6363fe83a9251d8005551fd2",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"recipes",
+								"recipe",
+								"6363fe83a9251d8005551fd2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete recipe Copy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "30fc9dc5-3f6c-4020-9f05-db6dbe84f764",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "39bd6eb8-6f80-44f6-b476-f3e77c10d86d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"owner\":\"62d177340ab9f59cae27c258\",\r\n    \"title\":\"kremowy sernik\",\r\n    \"description\":\"description of recipe by id\",\r\n    \"dishesType\":\"Occasion\",\r\n    \"cuisineCode\":\"pl\",\r\n    \"advancement\":\"1\",\r\n    \"prepTime\":\"00:14\",\r\n    \"cookTime\":\"02:00\",\r\n    \"serves\":4,\r\n    \"ingredientsList\":[\r\n        {   \r\n            \"isTips\":false,\r\n            \"qtt\":10,\r\n            \"name\":\"sugar\"\r\n        },\r\n        {\r\n            \"isTips\":false,\r\n            \"qtt\":10,\r\n            \"name\":\"milk\"\r\n        }\r\n    ],\r\n    \"manualList\":[\r\n        {\r\n            \"stepNumber\":1,\r\n            \"description\":\"new description of step 1\"\r\n        },\r\n        {\r\n            \"stepNumber\":2,\r\n            \"description\":\"new description of step 2\"\r\n        },\r\n        {\r\n            \"stepNumber\":3,\r\n            \"description\":\"new description of step 3\"\r\n        }\r\n    ],\r\n    \"tipTitle\":\"extra step for perfect taste\",\r\n    \"tipDescription\":\"somethingLike that\",\r\n    \"tipIngredientsList\":[\r\n        {   \r\n            \"qtt\":10,\r\n            \"unit\":\"sp.\",\r\n            \"name\":\"sugar\"\r\n        },\r\n        {\r\n            \"qtt\":10,\r\n            \"unit\":\"l\",\r\n            \"name\":\"milk\"\r\n        }\r\n    ],\r\n    \"tipManualList\":[\r\n        {\r\n            \"stepNumber\":1,\r\n            \"description\":\"new description of step 1\"\r\n        },\r\n        {\r\n            \"stepNumber\":2,\r\n            \"description\":\"new description of step 2\"\r\n        },\r\n        {\r\n            \"stepNumber\":3,\r\n            \"description\":\"new description of step 3\"\r\n        }\r\n    ],\r\n    \"tags\":[\"monday\",\"suop\",\"tomato soup\",\"kremowy\"]\r\n}"
+						},
+						"url": {
+							"raw": "https://{{host}}/api/v1/recipes/recipe/63b60c9e7bf93a6d9976fdde",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"recipes",
+								"recipe",
+								"63b60c9e7bf93a6d9976fdde"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tags",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c3c68071-d397-4b7d-9908-7e85a854fbc9",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "c92759b6-2795-4e08-9328-cfbdbb100374",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{host}}/api/v1/recipes/findByTag/pol",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"recipes",
+								"findByTag",
+								"pol"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "1c190740-f6fe-4819-8537-b61b226c1752",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "8d9ff5de-dd7a-44fb-9ee8-4cf916aebe4b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{host}}/api/v1/recipes/recipe",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"recipes",
+								"recipe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "liked recipes",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "145c3a62-65c0-49f1-bfeb-e46a11147e7b",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "9c4bf45a-70b3-4989-8320-fa020140b1a7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{host}}/api/v1/recipes/recipe/liked",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"recipes",
+								"recipe",
+								"liked"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "own recipes",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "5740a1c6-6270-4ad0-a440-eac576397de6",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "95853538-6794-4e3e-b97b-42ec5629f270",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{host}}/api/v1/recipes/findMyRecipes",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"recipes",
+								"findMyRecipes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Shopping list",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "4fed8cbe-0cde-40d2-80fa-e2d5a63794ee",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "8ee5da23-b5e7-4438-9291-be77eab635a9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{host}}/api/v1/recipes/shoppingLists",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"recipes",
+								"shoppingLists"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "65567674-ffc6-4f45-8a16-2c125dcc5879",
+							"name": "get ingredients list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://{{host}}:3000/api/v1/recipes/shoppingLists",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"recipes",
+										"shoppingLists"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "6140"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"17fc-Rnb3ZL320jf7OeGgQ20kZD+47rU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Oct 2022 18:15:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"_id\": \"63380c8df1ad61832c7ffbcc\",\n            \"owner\": \"63380c2ff1ad61832c7ffb9b\",\n            \"recipeId\": \"63380c72f1ad61832c7ffba3\",\n            \"ingredients\": [\n                {\n                    \"isDone\": false,\n                    \"qtt\": 5,\n                    \"unit\": \"g\",\n                    \"name\": \"sugar\",\n                    \"_id\": \"63380c72f1ad61832c7ffba4\"\n                },\n                {\n                    \"isDone\": false,\n                    \"qtt\": 1,\n                    \"unit\": \"g\",\n                    \"name\": \"sugar\",\n                    \"_id\": \"63380c72f1ad61832c7ffba5\"\n                },\n                {\n                    \"isDone\": false,\n                    \"qtt\": 1,\n                    \"unit\": \"g\",\n                    \"name\": \"sugar\",\n                    \"_id\": \"63380c72f1ad61832c7ffba7\"\n                },\n                {\n                    \"isDone\": false,\n                    \"qtt\": 5,\n                    \"unit\": \"\",\n                    \"name\": \"sugar\",\n                    \"_id\": \"63380c72f1ad61832c7ffba4\"\n                },\n                {\n                    \"isDone\": false,\n                    \"qtt\": 5,\n                    \"unit\": \"K\",\n                    \"name\": \"sugar\",\n                    \"_id\": \"63380c72f1ad61832c7ffba4\"\n                },\n                {\n                    \"isDone\": false,\n                    \"qtt\": 5,\n                    \"unit\": \"Kg\",\n                    \"name\": \"sugar\",\n                    \"_id\": \"63380c72f1ad61832c7ffba4\"\n                }\n            ],\n            \"tipIngredients\": [],\n            \"__v\": 0,\n            \"recipe\": [\n                {\n                    \"_id\": \"63380c72f1ad61832c7ffba3\",\n                    \"owner\": \"63380c2ff1ad61832c7ffb9b\",\n                    \"isEstablishment\": false,\n                    \"title\": \"test\",\n                    \"description\": \"desc test\",\n                    \"cuisine\": \"63380c23f1ad61832c7ffa13\",\n                    \"advancement\": 1,\n                    \"prepTime\": \"00:10\",\n                    \"cookTime\": \"00:30\",\n                    \"serves\": 4,\n                    \"isKosher\": false,\n                    \"isVegan\": false,\n                    \"isHalal\": false,\n                    \"dishesType\": \"Bakeries\",\n                    \"ingredients\": [\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffba4\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffba5\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffba6\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffba7\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffba8\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffba9\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbaa\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbab\"\n                        }\n                    ],\n                    \"manual\": [\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbac\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbad\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbae\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbaf\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb0\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb1\"\n                        }\n                    ],\n                    \"tipTitle\": \"tip\",\n                    \"tipDescription\": \"desc tip\",\n                    \"tipIngredients\": [\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb2\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb3\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb4\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb5\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb6\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb7\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb8\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb9\"\n                        }\n                    ],\n                    \"tipManual\": [\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbba\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbbb\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbbc\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbbd\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbbe\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbbf\"\n                        }\n                    ],\n                    \"tags\": [\n                        \"a\",\n                        \"b\",\n                        \"c\",\n                        \"d\",\n                        \"e\",\n                        \"f\",\n                        \"g\",\n                        \"h\",\n                        \"i\"\n                    ],\n                    \"counter\": \"63380c72f1ad61832c7ffba1\",\n                    \"__v\": 0\n                }\n            ]\n        },\n        {\n            \"_id\": \"633843caf17193e6c66028bf\",\n            \"owner\": \"63380c2ff1ad61832c7ffb9b\",\n            \"recipeId\": \"63380c72f1ad61832c7ffba3\",\n            \"ingredients\": [\n                {\n                    \"isDone\": false,\n                    \"qtt\": 1,\n                    \"unit\": \"g\",\n                    \"name\": \"sugar\",\n                    \"_id\": \"63380c72f1ad61832c7ffba5\"\n                },\n                {\n                    \"isDone\": false,\n                    \"qtt\": 1,\n                    \"unit\": \"g\",\n                    \"name\": \"sugar\",\n                    \"_id\": \"63380c72f1ad61832c7ffba6\"\n                }\n            ],\n            \"tipIngredients\": [\n                {\n                    \"isDone\": false,\n                    \"qtt\": 1,\n                    \"unit\": \"g\",\n                    \"name\": \"sugar\",\n                    \"_id\": \"63380c72f1ad61832c7ffbb9\"\n                }\n            ],\n            \"__v\": 0,\n            \"recipe\": [\n                {\n                    \"_id\": \"63380c72f1ad61832c7ffba3\",\n                    \"owner\": \"63380c2ff1ad61832c7ffb9b\",\n                    \"isEstablishment\": false,\n                    \"title\": \"test\",\n                    \"description\": \"desc test\",\n                    \"cuisine\": \"63380c23f1ad61832c7ffa13\",\n                    \"advancement\": 1,\n                    \"prepTime\": \"00:10\",\n                    \"cookTime\": \"00:30\",\n                    \"serves\": 4,\n                    \"isKosher\": false,\n                    \"isVegan\": false,\n                    \"isHalal\": false,\n                    \"dishesType\": \"Bakeries\",\n                    \"ingredients\": [\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffba4\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffba5\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffba6\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffba7\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffba8\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffba9\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbaa\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbab\"\n                        }\n                    ],\n                    \"manual\": [\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbac\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbad\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbae\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbaf\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb0\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb1\"\n                        }\n                    ],\n                    \"tipTitle\": \"tip\",\n                    \"tipDescription\": \"desc tip\",\n                    \"tipIngredients\": [\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb2\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb3\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb4\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb5\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb6\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb7\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb8\"\n                        },\n                        {\n                            \"qtt\": 1,\n                            \"unit\": \"g\",\n                            \"name\": \"sugar\",\n                            \"_id\": \"63380c72f1ad61832c7ffbb9\"\n                        }\n                    ],\n                    \"tipManual\": [\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbba\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbbb\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbbc\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbbd\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbbe\"\n                        },\n                        {\n                            \"stepNumber\": 1,\n                            \"description\": \"asdasda\",\n                            \"_id\": \"63380c72f1ad61832c7ffbbf\"\n                        }\n                    ],\n                    \"tags\": [\n                        \"a\",\n                        \"b\",\n                        \"c\",\n                        \"d\",\n                        \"e\",\n                        \"f\",\n                        \"g\",\n                        \"h\",\n                        \"i\"\n                    ],\n                    \"counter\": \"63380c72f1ad61832c7ffba1\",\n                    \"__v\": 0\n                }\n            ]\n        }\n    ],\n    \"message\": \"ShoppingList get successfully\",\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "create shopping list",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "d27054eb-88a8-45e8-9d50-854b2a084f53",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "658e2ce7-86ba-4d47-897a-270ade491927",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"recipeIngredients\": [\n        {\n            \"_id\": \"63356d48294e521cbed33e9f\",\n            \"name\": \"sugar\",\n            \"qtt\": 1,\n            \"unit\": \"g\"\n        }\n    ],\n    \"recipeTipIngredients\": [\n        {\n            \"_id\": \"63356d48294e521cbed33e9f\",\n            \"name\": \"sugar\",\n            \"qtt\": 1,\n            \"unit\": \"g\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "https://{{host}}/api/v1/recipes/shoppingList/63b60c9e7bf93a6d9976fde0",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"recipes",
+								"shoppingList",
+								"63b60c9e7bf93a6d9976fde0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create shopping list not recipe",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "eadb5838-cff7-44ff-b1ad-a57d9d78f427",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "3f454de4-8f8a-468b-b01c-f0e5c989ea74",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ingredients\": [\n        {\n            \"name\": \"sugar\",\n            \"qtt\": 1,\n            \"unit\": \"g\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "https://{{host}}/api/v1/recipes/shoppingList",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"recipes",
+								"shoppingList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete shopping list",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "4eaea28a-be4e-429d-91b1-fb09ef434fa3",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "1813b6d2-5cfe-4ced-bcb0-6001ab558708",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"recipeIngredients\": [\r\n        {\r\n            \"qtt\": 2,\r\n            \"isDone\": true,\r\n            \"unit\": \"psc\",\r\n            \"name\": \"mint over \",\r\n            \"_id\": \"62da87e2cb70558de528ec89\"\r\n        },\r\n            {\r\n            \"qtt\": 10,\r\n            \"unit\": \"psc\",\r\n            \"name\": \"milk\",\r\n            \"_id\": \"62da87e2cb70558de528ec8a\"\r\n        }\r\n        ],\r\n        \"recipeTipIngredients\": [\r\n        {\r\n            \"qtt\": 10,\r\n            \"unit\": \"sp.\",\r\n            \"name\": \"sugar\",\r\n            \"_id\": \"62da87e2cb70558de528ec8e\"\r\n        },\r\n        {\r\n            \"qtt\": 10,\r\n            \"unit\": \"l\",\r\n            \"name\": \"milk\",\r\n            \"_id\": \"62da87e2cb70558de528ec8f\"\r\n        }\r\n    ]\r\n\r\n}"
+						},
+						"url": {
+							"raw": "https://{{host}}/api/v1/recipes/shoppingList/63e5063686232ec5affd4823",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"recipes",
+								"shoppingList",
+								"63e5063686232ec5affd4823"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "29b69021-895c-407f-b859-e10062f25676",
+							"name": "delete shopping list",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipeIngredients\": [\r\n        {\r\n            \"qtt\": 2,\r\n            \"isDone\": true,\r\n            \"unit\": \"psc\",\r\n            \"name\": \"mint over \",\r\n            \"_id\": \"62da87e2cb70558de528ec89\"\r\n        },\r\n            {\r\n            \"qtt\": 10,\r\n            \"unit\": \"psc\",\r\n            \"name\": \"milk\",\r\n            \"_id\": \"62da87e2cb70558de528ec8a\"\r\n        }\r\n        ],\r\n        \"recipeTipIngredients\": [\r\n        {\r\n            \"qtt\": 10,\r\n            \"unit\": \"sp.\",\r\n            \"name\": \"sugar\",\r\n            \"_id\": \"62da87e2cb70558de528ec8e\"\r\n        },\r\n        {\r\n            \"qtt\": 10,\r\n            \"unit\": \"l\",\r\n            \"name\": \"milk\",\r\n            \"_id\": \"62da87e2cb70558de528ec8f\"\r\n        }\r\n    ]\r\n\r\n}"
+								},
+								"url": {
+									"raw": "http://{{host}}:{{PORT}}/api/v1/recipes/shoppingList/63643eeca9251d800555224c",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"api",
+										"v1",
+										"recipes",
+										"shoppingList",
+										"63643eeca9251d800555224c"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "539"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"21b-JhVUyYMHZTOSN9TnQ+qVgqOopo4\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Nov 2022 20:24:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"_id\": \"63643eeca9251d800555224c\",\n        \"owner\": \"6351c325951dcc0f3b86cdb8\",\n        \"recipeId\": \"6363fffea9251d8005552008\",\n        \"ingredients\": [\n            {\n                \"isDone\": false,\n                \"qtt\": 12,\n                \"unit\": \"b\",\n                \"name\": \"a\",\n                \"_id\": \"6363fffea9251d8005552009\"\n            },\n            {\n                \"isDone\": false,\n                \"qtt\": 1,\n                \"unit\": \"c\",\n                \"name\": \"b\",\n                \"_id\": \"6363fffea9251d800555200a\"\n            },\n            {\n                \"isDone\": false,\n                \"qtt\": 11,\n                \"unit\": \"c\",\n                \"name\": \"b\",\n                \"_id\": \"6363fffea9251d800555200b\"\n            }\n        ],\n        \"tipIngredients\": [],\n        \"createdAt\": \"2022-11-03T22:21:32.614Z\",\n        \"updatedAt\": \"2022-11-03T22:21:32.614Z\",\n        \"__v\": 0\n    },\n    \"message\": \"ShoppingList deleted successfully\",\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "update shopping list",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "6f8d4da4-f3de-43e6-a51f-fd1f62fe592f",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "24e1d33d-bbe1-4ce9-8715-3e9c17ceb66c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"recipeIngredients\": [\r\n        {\r\n            \"qtt\": 2,\r\n            \"isDone\": true,\r\n            \"unit\": \"psc\",\r\n            \"name\": \"mint over \",\r\n            \"_id\": \"62da87e2cb70558de528ec89\"\r\n        },\r\n            {\r\n            \"qtt\": 10,\r\n            \"unit\": \"psc\",\r\n            \"name\": \"milk\",\r\n            \"_id\": \"62da87e2cb70558de528ec8a\"\r\n        }\r\n        ],\r\n        \"recipeTipIngredients\": [\r\n        {\r\n            \"qtt\": 10,\r\n            \"unit\": \"sp.\",\r\n            \"name\": \"sugar\",\r\n            \"_id\": \"62da87e2cb70558de528ec8e\"\r\n        },\r\n        {\r\n            \"qtt\": 10,\r\n            \"unit\": \"l\",\r\n            \"name\": \"milk\",\r\n            \"_id\": \"62da87e2cb70558de528ec8f\"\r\n        }\r\n    ]\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://{{host}}/api/v1/recipes/shoppingList/62daa0f8bd840532e548e0f5",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"recipes",
+								"shoppingList",
+								"62daa0f8bd840532e548e0f5"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "2d20011b-85d0-437f-8b63-86394d0f628e"
+		},
+		{
+			"name": "upload photo",
+			"id": "4198de49-7448-4bfd-b026-a60e01d9f62b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "recipeId",
+							"value": "62d7e7f09486d4bf4d07248c",
+							"type": "text",
+							"contentType": "application/json"
+						},
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/D:/newgen/blink/blink/src/assets/legit.png"
+						},
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/D:/newgen/blink/blink/src/assets/banner.png"
+						},
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/D:/newgen/blink/blink/src/assets/BX.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{host}}/api/v1/recipes/photos",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"recipes",
+						"photos"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{accestoken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "4e09fd91-effc-4917-b95b-ed8ad6bf1e5a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "40261fd5-c5fc-4e4e-a303-acb9724b8b79",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "9009680d-6fe2-46f4-a6da-4943d119b85c",
+		"name": "Rating",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "8252115-9009680d-6fe2-46f4-a6da-4943d119b85c"
+	},
+	"item": [
+		{
+			"name": "Add Rating",
+			"id": "bd0b437e-0f43-48b8-b986-9c78f02c9a1e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"chefRating\": 5,\r\n    \"driverRating\": 3,\r\n    \"overallRating\": 3,\r\n    \"waiterRating\": 5\r\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}/api/v1/rating/62e9904437a3630b83a12512",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"rating",
+						"62e9904437a3630b83a12512"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Rating",
+			"id": "9b927286-f471-4a95-9c51-5a88f0f8fe5d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n      \"driverRating\":2,\r\n      \"overallRating\":3,\r\n      \"waiterRating\":4\r\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}/api/v1/rating/62e9904437a3630b83a12512",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"rating",
+						"62e9904437a3630b83a12512"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{accesToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2dafede2-2c1f-4aed-8093-b995717176ad",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "01810ab9-a2ac-456b-95b5-a8cc0ef3200a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

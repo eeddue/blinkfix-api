@@ -1,0 +1,2198 @@
+{
+	"info": {
+		"_postman_id": "04924e6e-a569-4db6-8842-e5c159e06567",
+		"name": "user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "8252115-04924e6e-a569-4db6-8842-e5c159e06567"
+	},
+	"item": [
+		{
+			"name": "counters",
+			"item": [
+				{
+					"name": "counter establishment",
+					"item": [
+						{
+							"name": "like establishment",
+							"id": "9e49b0d1-7dbf-41c7-801f-a4569a015d4a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accestoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\":\"iJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzI4NGRjNzI4MjhkYmM2YTE5NTdlMWYiLCJpYXQiOjE2NjM1ODcxNjIsImV4cCI6MTY2MzY3MzU2Mn0.odzJKeJ0Os2w3g9705iww6GeieRjMqEYOA2nY0kK2dg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{host}}/api/v1/user/counter/addLikeToEstablishment/63e464b05c1a57fb46fc37ac",
+									"protocol": "https",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"counter",
+										"addLikeToEstablishment",
+										"63e464b05c1a57fb46fc37ac"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "7fe2aa16-48b8-4818-9725-3ae40665f2f0",
+									"name": "token",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{host}}:3000/api/v1/user/token",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"token"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "102"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"66-5YvoW2I19pvg03cRudubEwWlUwA\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Aug 2022 11:29:16 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"failure\",\n    \"message\": \"Invalid request. Token is not same in store.\",\n    \"error\": null,\n    \"data\": null\n}"
+								},
+								{
+									"id": "7ea39166-3030-4be4-9bfe-96affc901af4",
+									"name": "token",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1NzgsImV4cCI6MTY2MjYzNjU3OH0.4AIklzd7v6CKI04jVu0h7yA9LN_guVdwh8QVlAAxf0c\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{host}}:3000/api/v1/user/token",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"token"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "443"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1bb-NEO1s+yQyVxZMmWRfH3fSbFe+uE\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Aug 2022 11:29:50 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"failure\",\n    \"message\": \"success\",\n    \"data\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1OTAsImV4cCI6MTY2MDEzMDk5MH0.nAjHVnvDvb6CFg7qvyfEyEJuHELQXWBysiBVIL6GsXc\",\n        \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1OTAsImV4cCI6MTY2MjYzNjU5MH0.5-eHEw6e5FwBkzPjzu8J-UEIC7VxbJ-iLdp8Luk11Gs\"\n    },\n    \"error\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "share establishment",
+							"id": "d62f8ea2-bf35-450c-a3d6-646b1f92712d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accestoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\":\"iJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzI4NGRjNzI4MjhkYmM2YTE5NTdlMWYiLCJpYXQiOjE2NjM1ODcxNjIsImV4cCI6MTY2MzY3MzU2Mn0.odzJKeJ0Os2w3g9705iww6GeieRjMqEYOA2nY0kK2dg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}/api/v1/user/counter/addShareToEstablishment/6351c3f502c30b77a5043a63",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"counter",
+										"addShareToEstablishment",
+										"6351c3f502c30b77a5043a63"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "734c617b-e71f-4bb3-88be-aa6956b5f2da",
+									"name": "token",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{host}}:3000/api/v1/user/token",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"token"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "102"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"66-5YvoW2I19pvg03cRudubEwWlUwA\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Aug 2022 11:29:16 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"failure\",\n    \"message\": \"Invalid request. Token is not same in store.\",\n    \"error\": null,\n    \"data\": null\n}"
+								},
+								{
+									"id": "3350523f-d7b5-4f4c-a701-5bf70e956c6b",
+									"name": "token",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1NzgsImV4cCI6MTY2MjYzNjU3OH0.4AIklzd7v6CKI04jVu0h7yA9LN_guVdwh8QVlAAxf0c\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{host}}:3000/api/v1/user/token",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"token"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "443"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1bb-NEO1s+yQyVxZMmWRfH3fSbFe+uE\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Aug 2022 11:29:50 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"failure\",\n    \"message\": \"success\",\n    \"data\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1OTAsImV4cCI6MTY2MDEzMDk5MH0.nAjHVnvDvb6CFg7qvyfEyEJuHELQXWBysiBVIL6GsXc\",\n        \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1OTAsImV4cCI6MTY2MjYzNjU5MH0.5-eHEw6e5FwBkzPjzu8J-UEIC7VxbJ-iLdp8Luk11Gs\"\n    },\n    \"error\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "click establishment",
+							"id": "6687940b-0053-4398-801c-c55f81dddace",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accestoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\":\"iJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzI4NGRjNzI4MjhkYmM2YTE5NTdlMWYiLCJpYXQiOjE2NjM1ODcxNjIsImV4cCI6MTY2MzY3MzU2Mn0.odzJKeJ0Os2w3g9705iww6GeieRjMqEYOA2nY0kK2dg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}/api/v1/user/counter/addClickToEstablishment/6351c3f502c30b77a5043a63",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"counter",
+										"addClickToEstablishment",
+										"6351c3f502c30b77a5043a63"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "9a26b78a-da6b-45f9-95fd-94ee6103e6c4",
+									"name": "token",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{host}}:3000/api/v1/user/token",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"token"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "102"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"66-5YvoW2I19pvg03cRudubEwWlUwA\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Aug 2022 11:29:16 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"failure\",\n    \"message\": \"Invalid request. Token is not same in store.\",\n    \"error\": null,\n    \"data\": null\n}"
+								},
+								{
+									"id": "e4e41050-e537-4ac0-b0f9-65acce0da6db",
+									"name": "token",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1NzgsImV4cCI6MTY2MjYzNjU3OH0.4AIklzd7v6CKI04jVu0h7yA9LN_guVdwh8QVlAAxf0c\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{host}}:3000/api/v1/user/token",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"token"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "443"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1bb-NEO1s+yQyVxZMmWRfH3fSbFe+uE\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Aug 2022 11:29:50 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"failure\",\n    \"message\": \"success\",\n    \"data\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1OTAsImV4cCI6MTY2MDEzMDk5MH0.nAjHVnvDvb6CFg7qvyfEyEJuHELQXWBysiBVIL6GsXc\",\n        \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1OTAsImV4cCI6MTY2MjYzNjU5MH0.5-eHEw6e5FwBkzPjzu8J-UEIC7VxbJ-iLdp8Luk11Gs\"\n    },\n    \"error\": null\n}"
+								}
+							]
+						}
+					],
+					"id": "cff96a25-508f-4278-b6f6-721481c126c5"
+				},
+				{
+					"name": "counter menu item",
+					"item": [
+						{
+							"name": "like menu item",
+							"id": "76dca12c-a959-4cfa-ab8b-279c1597e2bb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accestoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\":\"iJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzI4NGRjNzI4MjhkYmM2YTE5NTdlMWYiLCJpYXQiOjE2NjM1ODcxNjIsImV4cCI6MTY2MzY3MzU2Mn0.odzJKeJ0Os2w3g9705iww6GeieRjMqEYOA2nY0kK2dg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{host}}/api/v1/user/counter/addLikeToEstablishmentMenuItem/64260875a62a04dcb211f3c2",
+									"protocol": "https",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"counter",
+										"addLikeToEstablishmentMenuItem",
+										"64260875a62a04dcb211f3c2"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "0be162f2-198b-4e32-a5b8-c03cd0a8a20a",
+									"name": "token",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{host}}:{{PORT}}/api/v1/user/token",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "{{PORT}}",
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"token"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "102"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"66-5YvoW2I19pvg03cRudubEwWlUwA\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Aug 2022 11:29:16 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"failure\",\n    \"message\": \"Invalid request. Token is not same in store.\",\n    \"error\": null,\n    \"data\": null\n}"
+								},
+								{
+									"id": "909e90b9-d2ff-45d1-a301-39c8a8f8e7f2",
+									"name": "token",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1NzgsImV4cCI6MTY2MjYzNjU3OH0.4AIklzd7v6CKI04jVu0h7yA9LN_guVdwh8QVlAAxf0c\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{host}}:{{PORT}}/api/v1/user/token",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "{{PORT}}",
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"token"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "443"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1bb-NEO1s+yQyVxZMmWRfH3fSbFe+uE\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Aug 2022 11:29:50 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"failure\",\n    \"message\": \"success\",\n    \"data\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1OTAsImV4cCI6MTY2MDEzMDk5MH0.nAjHVnvDvb6CFg7qvyfEyEJuHELQXWBysiBVIL6GsXc\",\n        \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1OTAsImV4cCI6MTY2MjYzNjU5MH0.5-eHEw6e5FwBkzPjzu8J-UEIC7VxbJ-iLdp8Luk11Gs\"\n    },\n    \"error\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "get liked menu items",
+							"id": "5d33688b-d3cb-4380-b1c6-3c93669e4bcb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accestoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\":\"iJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzI4NGRjNzI4MjhkYmM2YTE5NTdlMWYiLCJpYXQiOjE2NjM1ODcxNjIsImV4cCI6MTY2MzY3MzU2Mn0.odzJKeJ0Os2w3g9705iww6GeieRjMqEYOA2nY0kK2dg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{host}}/api/v1/user/counter/menuItemsStatistic",
+									"protocol": "https",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"counter",
+										"menuItemsStatistic"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "254c3399-5a0f-4260-a8bc-bdfb5b16dd63",
+									"name": "token",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{host}}:{{PORT}}/api/v1/user/token",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "{{PORT}}",
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"token"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "102"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"66-5YvoW2I19pvg03cRudubEwWlUwA\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Aug 2022 11:29:16 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"failure\",\n    \"message\": \"Invalid request. Token is not same in store.\",\n    \"error\": null,\n    \"data\": null\n}"
+								},
+								{
+									"id": "d9765478-b76d-4683-8451-f9987f8a207d",
+									"name": "token",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1NzgsImV4cCI6MTY2MjYzNjU3OH0.4AIklzd7v6CKI04jVu0h7yA9LN_guVdwh8QVlAAxf0c\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{host}}:{{PORT}}/api/v1/user/token",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "{{PORT}}",
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"token"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "443"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1bb-NEO1s+yQyVxZMmWRfH3fSbFe+uE\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Aug 2022 11:29:50 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"failure\",\n    \"message\": \"success\",\n    \"data\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1OTAsImV4cCI6MTY2MDEzMDk5MH0.nAjHVnvDvb6CFg7qvyfEyEJuHELQXWBysiBVIL6GsXc\",\n        \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1OTAsImV4cCI6MTY2MjYzNjU5MH0.5-eHEw6e5FwBkzPjzu8J-UEIC7VxbJ-iLdp8Luk11Gs\"\n    },\n    \"error\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "share menu item",
+							"id": "cdca1da9-d620-4e79-a5a4-b75e8e6fa2d9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accestoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\":\"iJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzI4NGRjNzI4MjhkYmM2YTE5NTdlMWYiLCJpYXQiOjE2NjM1ODcxNjIsImV4cCI6MTY2MzY3MzU2Mn0.odzJKeJ0Os2w3g9705iww6GeieRjMqEYOA2nY0kK2dg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{host}}/api/v1/user/counter/addShareToEstablishmentMenuItem/6359df9357fb0c6af6b5bb13",
+									"protocol": "https",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"counter",
+										"addShareToEstablishmentMenuItem",
+										"6359df9357fb0c6af6b5bb13"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "e59916e5-8178-4068-bc19-749f681b5cae",
+									"name": "token",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{host}}:{{PORT}}/api/v1/user/token",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "{{PORT}}",
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"token"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "102"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"66-5YvoW2I19pvg03cRudubEwWlUwA\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Aug 2022 11:29:16 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"failure\",\n    \"message\": \"Invalid request. Token is not same in store.\",\n    \"error\": null,\n    \"data\": null\n}"
+								},
+								{
+									"id": "62408f62-0ac1-4256-b215-5d72d96b1ed9",
+									"name": "token",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1NzgsImV4cCI6MTY2MjYzNjU3OH0.4AIklzd7v6CKI04jVu0h7yA9LN_guVdwh8QVlAAxf0c\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{host}}:{{PORT}}/api/v1/user/token",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "{{PORT}}",
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"token"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "443"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1bb-NEO1s+yQyVxZMmWRfH3fSbFe+uE\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Aug 2022 11:29:50 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"failure\",\n    \"message\": \"success\",\n    \"data\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1OTAsImV4cCI6MTY2MDEzMDk5MH0.nAjHVnvDvb6CFg7qvyfEyEJuHELQXWBysiBVIL6GsXc\",\n        \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1OTAsImV4cCI6MTY2MjYzNjU5MH0.5-eHEw6e5FwBkzPjzu8J-UEIC7VxbJ-iLdp8Luk11Gs\"\n    },\n    \"error\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "click menu item",
+							"id": "4a1848be-a456-4724-99a3-dab598cf47c1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accestoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\":\"iJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzI4NGRjNzI4MjhkYmM2YTE5NTdlMWYiLCJpYXQiOjE2NjM1ODcxNjIsImV4cCI6MTY2MzY3MzU2Mn0.odzJKeJ0Os2w3g9705iww6GeieRjMqEYOA2nY0kK2dg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}/api/v1/user/counter/addClickToEstablishment/6351c3f502c30b77a5043a63",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"counter",
+										"addClickToEstablishment",
+										"6351c3f502c30b77a5043a63"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "a6aa34aa-8d33-4bc7-b257-8bc304926a61",
+									"name": "token",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{host}}:{{PORT}}/api/v1/user/token",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "{{PORT}}",
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"token"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "102"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"66-5YvoW2I19pvg03cRudubEwWlUwA\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Aug 2022 11:29:16 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"failure\",\n    \"message\": \"Invalid request. Token is not same in store.\",\n    \"error\": null,\n    \"data\": null\n}"
+								},
+								{
+									"id": "93bcce6d-3d27-4911-bb2f-b59be9ba48d9",
+									"name": "token",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1NzgsImV4cCI6MTY2MjYzNjU3OH0.4AIklzd7v6CKI04jVu0h7yA9LN_guVdwh8QVlAAxf0c\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{host}}:{{PORT}}/api/v1/user/token",
+											"protocol": "http",
+											"host": [
+												"{{host}}"
+											],
+											"port": "{{PORT}}",
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"token"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "443"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1bb-NEO1s+yQyVxZMmWRfH3fSbFe+uE\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Aug 2022 11:29:50 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"failure\",\n    \"message\": \"success\",\n    \"data\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1OTAsImV4cCI6MTY2MDEzMDk5MH0.nAjHVnvDvb6CFg7qvyfEyEJuHELQXWBysiBVIL6GsXc\",\n        \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1OTAsImV4cCI6MTY2MjYzNjU5MH0.5-eHEw6e5FwBkzPjzu8J-UEIC7VxbJ-iLdp8Luk11Gs\"\n    },\n    \"error\": null\n}"
+								}
+							]
+						}
+					],
+					"id": "f5d2d249-def7-4aba-aa02-a030a05e2df3"
+				},
+				{
+					"name": "Recipe",
+					"item": [
+						{
+							"name": "LikeCounter",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "8cb77e81-be15-41a5-bbe4-b463472188c2",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "90308c7c-81ed-489d-9e97-f2f5f41c883b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accestoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://{{host}}/api/v1/recipes/counter/addLike/63f64735fa21a173ff9232f1",
+									"protocol": "https",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"recipes",
+										"counter",
+										"addLike",
+										"63f64735fa21a173ff9232f1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "shareCounter",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "820956f3-1bc3-4b61-9712-f5df2c44c6c8",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "fca1368d-dc47-462c-860f-f59556a43f2e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"owner\":\"62d177340ab9f59cae27c258\",\r\n    \"title\":\"remowy sernik\",\r\n    \"description\":\"testraaa\",\r\n    \"dishesType\":\"Occasion\",\r\n    \"cuisineCode\":\"pl\",\r\n    \"advancement\":\"1\",\r\n    \"prepTime\":\"00:14\",\r\n    \"cookTime\":\"02:00\",\r\n    \"serves\":4,\r\n    \"ingredientsList\":[\r\n        {   \r\n            \"isTips\":false,\r\n            \"qtt\":10,\r\n            \"name\":\"sugar\"\r\n        },\r\n        {\r\n            \"isTips\":false,\r\n            \"qtt\":10,\r\n            \"name\":\"milk\"\r\n        }\r\n    ],\r\n    \"manualList\":[\r\n        {\r\n            \"stepNumber\":1,\r\n            \"description\":\"new description of step 1\"\r\n        },\r\n        {\r\n            \"stepNumber\":2,\r\n            \"description\":\"new description of step 2\"\r\n        },\r\n        {\r\n            \"stepNumber\":3,\r\n            \"description\":\"new description of step 3\"\r\n        }\r\n    ],\r\n    \"tipTitle\":\"extra step for perfect taste\",\r\n    \"tipDescription\":\"somethingLike that\",\r\n    \"tipIngredientsList\":[\r\n        {   \r\n            \"qtt\":10,\r\n            \"unit\":\"sp.\",\r\n            \"name\":\"sugar\"\r\n        },\r\n        {\r\n            \"qtt\":10,\r\n            \"unit\":\"l\",\r\n            \"name\":\"milk\"\r\n        }\r\n    ],\r\n    \"tipManualList\":[\r\n        {\r\n            \"stepNumber\":1,\r\n            \"description\":\"new description of step 1\"\r\n        },\r\n        {\r\n            \"stepNumber\":2,\r\n            \"description\":\"new description of step 2\"\r\n        },\r\n        {\r\n            \"stepNumber\":3,\r\n            \"description\":\"new description of step 3\"\r\n        }\r\n    ],\r\n    \"tags\":[\"monday\",\"suop\",\"tomato soup\",\"kremowy\"]\r\n}"
+								},
+								"url": {
+									"raw": "http://{{host}}/api/v1/recipes/counter/addShare/635b2b0d9708a3d8663effaf",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"recipes",
+										"counter",
+										"addShare",
+										"635b2b0d9708a3d8663effaf"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "clicCounter",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "c1be184c-d0df-488e-b17d-1ebc7bd1b953",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "5afa835a-0b6b-4ae2-aa5f-e010b17fb994",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"owner\":\"62d177340ab9f59cae27c258\",\r\n    \"title\":\"remowy sernik\",\r\n    \"description\":\"testraaa\",\r\n    \"dishesType\":\"Occasion\",\r\n    \"cuisineCode\":\"pl\",\r\n    \"advancement\":\"1\",\r\n    \"prepTime\":\"00:14\",\r\n    \"cookTime\":\"02:00\",\r\n    \"serves\":4,\r\n    \"ingredientsList\":[\r\n        {   \r\n            \"isTips\":false,\r\n            \"qtt\":10,\r\n            \"name\":\"sugar\"\r\n        },\r\n        {\r\n            \"isTips\":false,\r\n            \"qtt\":10,\r\n            \"name\":\"milk\"\r\n        }\r\n    ],\r\n    \"manualList\":[\r\n        {\r\n            \"stepNumber\":1,\r\n            \"description\":\"new description of step 1\"\r\n        },\r\n        {\r\n            \"stepNumber\":2,\r\n            \"description\":\"new description of step 2\"\r\n        },\r\n        {\r\n            \"stepNumber\":3,\r\n            \"description\":\"new description of step 3\"\r\n        }\r\n    ],\r\n    \"tipTitle\":\"extra step for perfect taste\",\r\n    \"tipDescription\":\"somethingLike that\",\r\n    \"tipIngredientsList\":[\r\n        {   \r\n            \"qtt\":10,\r\n            \"unit\":\"sp.\",\r\n            \"name\":\"sugar\"\r\n        },\r\n        {\r\n            \"qtt\":10,\r\n            \"unit\":\"l\",\r\n            \"name\":\"milk\"\r\n        }\r\n    ],\r\n    \"tipManualList\":[\r\n        {\r\n            \"stepNumber\":1,\r\n            \"description\":\"new description of step 1\"\r\n        },\r\n        {\r\n            \"stepNumber\":2,\r\n            \"description\":\"new description of step 2\"\r\n        },\r\n        {\r\n            \"stepNumber\":3,\r\n            \"description\":\"new description of step 3\"\r\n        }\r\n    ],\r\n    \"tags\":[\"monday\",\"suop\",\"tomato soup\",\"kremowy\"]\r\n}"
+								},
+								"url": {
+									"raw": "http://{{host}}/api/v1/recipes/counter/addClick/635b2b0d9708a3d8663effaf/",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"recipes",
+										"counter",
+										"addClick",
+										"635b2b0d9708a3d8663effaf",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "348b81a9-afd9-4785-8f0b-e8b49663bee4"
+				}
+			],
+			"id": "ccbd5014-e30c-4505-b1e1-fe9005472a9e"
+		},
+		{
+			"name": "register",
+			"id": "7bc5a4c6-eb2a-46c3-917f-f843aed164cc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"address\": {\r\n        \"buildingnumber\": \"29\",\r\n        \"city\": \"rybna\",\r\n        \"country\": \"poland\",\r\n        \"postcode\": \"35004\",\r\n        \"state\": \"Alabama\",\r\n        \"street\": \"długa\"\r\n    },\r\n    \"birth_year\": \"1997-10-17\",\r\n    \"confirmPassword\": \"123456\",\r\n    \"email\": \"platek549@gmailrestaurant.com\",\r\n    \"first_name\": \"karol\",\r\n    \"last_name\": \"platek\",\r\n    \"name\": \"satyra\",\r\n    \"password\": \"123456\",\r\n    \"phone_number\": \"000000000\",\r\n    \"userRole\": \"Local Cook\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{host}}/api/v1/user/register",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stripe",
+			"id": "3eb9152e-dd5b-48fd-b5d6-d96c7d9db6a3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"address\": {\r\n        \"buildingnumber\": \"29\",\r\n        \"city\": \"rybna\",\r\n        \"country\": \"poland\",\r\n        \"postcode\": \"35004\",\r\n        \"state\": \"Alabama\",\r\n        \"street\": \"długa\"\r\n    },\r\n    \"birth_year\": \"1997-10-17\",\r\n    \"confirmPassword\": \"123456\",\r\n    \"email\": \"platek549@gmail3.com\",\r\n    \"first_name\": \"karol\",\r\n    \"last_name\": \"platek\",\r\n    \"name\": \"satyra\",\r\n    \"password\": \"123456\",\r\n    \"phone_number\": \"000000000\",\r\n    \"userRole\": \"Restaurant\",\r\n    \"stripe\": {\r\n            \"countryCode\": \"PL\",\r\n            \"account_number\": \"PL61109010140000071219812874\",\r\n            \"currency\": \"PLN\"\r\n        \r\n        \r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{host}}/api/v1/user/register",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"id": "4af382e6-0874-4c58-901a-1edcc2cbf98b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\":\"platek549@gmailrestaurant.com\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{host}}/api/v1/user/login",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "bccb12a8-6f0c-443e-bab2-fdf29fa634d0",
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\":\"platekRestaurant@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}:{{PORT}}/api/v1/user/login",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "462"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1ce-VAGQR/0ZYataHmOxGlDaksCPc+w\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 11:21:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"User successfully signed in\",\n    \"error\": null,\n    \"data\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQwOTUsImV4cCI6MTY2MDEzMDQ5NX0.DlD94JmLginl2t0xrNusc-i8AcGonHgiCqd5UkhoOK8\",\n        \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQwOTUsImV4cCI6MTY2MjYzNjA5NX0.LRieucJtL4MzdzTzZ76H2xnedoT7x85QPmnH3O_G5eo\"\n    }\n}"
+				},
+				{
+					"id": "d54438a5-92c4-409c-a8e9-8fd4a4c8e3f1",
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\":\"platekUser@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}:{{PORT}}/api/v1/user/login",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "443"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1bb-CmAdvvPGJg5poSWlW+Z7xKLgNwY\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Sep 2022 12:01:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User successfully signed in\",\n    \"error\": null,\n    \"data\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzEwOTYzNTczZWQwNjM3YmE1ZTMwNWQiLCJpYXQiOjE2NjIwMzM2OTUsImV4cCI6MTY2MjAzNDU5NX0.mKFUePPV64LJ2HtrLV2duwSucW_Y3bIGFvqTc_dAuxY\",\n        \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzEwOTYzNTczZWQwNjM3YmE1ZTMwNWQiLCJpYXQiOjE2NjIwMzM2OTUsImV4cCI6MTY2MjAzNDU5NX0.mKFUePPV64LJ2HtrLV2duwSucW_Y3bIGFvqTc_dAuxY\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "reset password request",
+			"id": "d2470aad-e6b7-4b4a-a426-737b477f6fe1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"platek549@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{host}}/api/v1/user/resetrequest",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"resetrequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset password response",
+			"id": "c81c3af7-2d33-4e6c-891e-7361b1cebf21",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"resetCode\": \"845231\",\r\n    \"password\": \"12345\",\r\n    \"confirmPassword\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/api/v1/user/resetresponse",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"resetresponse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"id": "002f5c29-6b15-442d-8495-36c6bdc1a0ad",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accestoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/api/v1/user/logout",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "3eb42b30-35f8-42ce-b766-4c96a2a42311",
+					"name": "logout",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}:3000/api/v1/user/logout",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "token",
+			"id": "fb5aff4f-36bb-49aa-9b2c-f6656ed06798",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2M3ZDMyMjczY2NkYTA3MDU1N2E1YzAiLCJpYXQiOjE2NzUyODkxMjYsImV4cCI6MTY3Nzg4MTEyNn0.QyeNzCPNUDhTDMgUqSdlOuX0bJZjTay2Ia3ojRO24mU\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{host}}/api/v1/user/token",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"token"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "89be529e-daa1-4959-be72-5edadef41cbf",
+					"name": "token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}:3000/api/v1/user/token",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"token"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "102"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"66-5YvoW2I19pvg03cRudubEwWlUwA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 11:29:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"failure\",\n    \"message\": \"Invalid request. Token is not same in store.\",\n    \"error\": null,\n    \"data\": null\n}"
+				},
+				{
+					"id": "2f159ce0-a391-482f-9e47-a91a240bf85e",
+					"name": "token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1NzgsImV4cCI6MTY2MjYzNjU3OH0.4AIklzd7v6CKI04jVu0h7yA9LN_guVdwh8QVlAAxf0c\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}:3000/api/v1/user/token",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "443"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1bb-NEO1s+yQyVxZMmWRfH3fSbFe+uE\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 11:29:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"failure\",\n    \"message\": \"success\",\n    \"data\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1OTAsImV4cCI6MTY2MDEzMDk5MH0.nAjHVnvDvb6CFg7qvyfEyEJuHELQXWBysiBVIL6GsXc\",\n        \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQ1OTAsImV4cCI6MTY2MjYzNjU5MH0.5-eHEw6e5FwBkzPjzu8J-UEIC7VxbJ-iLdp8Luk11Gs\"\n    },\n    \"error\": null\n}"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "daa48528-6aab-4746-8441-8e0589705f36",
+		"name": "payment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "8252115-daa48528-6aab-4746-8441-8e0589705f36"
+	},
+	"item": [
+		{
+			"name": "test get",
+			"id": "fd1207d6-968f-4a7a-ac9b-8547fca3b9c0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accestoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"totalCosts\": 123.45,\n    \"orderWhereId\": \"64260366a62a04dcb211f21c\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{host}}/api/v1/order/payment/payment-sheet",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"order",
+						"payment",
+						"payment-sheet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addstripe",
+			"id": "62984e60-e7d0-4e8d-888e-94f6590e8bb7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accestoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"countryCode\": \"PL\",\n    \"account_number\": \"PL61109010140000071219812874\",\n    \"currency\": \"PLN\"\n}"
+				},
+				"url": {
+					"raw": "https://{{host}}/api/v1/order/payment/addstripe",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"order",
+						"payment",
+						"addstripe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBalance",
+			"id": "015566c4-b5bc-444a-95ec-b38c3fea37e6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accestoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"countryCode\": \"PL\",\n    \"account_number\": \"PL61109010140000071219812874\",\n    \"currency\": \"PLN\"\n}"
+				},
+				"url": {
+					"raw": "https://{{host}}/api/v1/order/payment/getBalance",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"order",
+						"payment",
+						"getBalance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

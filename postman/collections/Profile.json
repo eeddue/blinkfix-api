@@ -1,0 +1,3744 @@
+{
+	"info": {
+		"_postman_id": "cd0366ff-0758-4254-a501-604429a0449d",
+		"name": "Profile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "8252115-cd0366ff-0758-4254-a501-604429a0449d"
+	},
+	"item": [
+		{
+			"name": "allergies",
+			"item": [
+				{
+					"name": "get allergies",
+					"id": "bd9cc965-ac40-4709-a491-21ed8728ad33",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{host}}/api/v1/profile/allergies",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"allergies"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "03ff71a7-021f-4e00-a93e-ea710a431ed4",
+							"name": "logout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "81"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "allergies",
+					"id": "bb2fcacb-22a5-4c9a-9923-952e133eb10a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"allergy\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{host}}/api/v1/profile/allergies",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"allergies"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "f6848f4b-ed62-436e-86ae-b1c5355e61fc",
+							"name": "logout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "81"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "delete allergies",
+					"id": "eea4df21-a362-4a73-9e7c-8ca0302f7d81",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{host}}/api/v1/profile/allergies/3",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"allergies",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "38d0462a-3681-48a1-baa5-99d8936fc1c7",
+							"name": "logout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "81"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+						}
+					]
+				}
+			],
+			"id": "7371dec0-301f-435f-bb15-e6dc4f0b1e5d"
+		},
+		{
+			"name": "ivoices recipes",
+			"item": [
+				{
+					"name": "my recipes ivoices",
+					"id": "fa206bbc-6d74-4a38-b110-019a86e54d86",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{host}}/api/v1/profile/invoices/recipes",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"invoices",
+								"recipes"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "f85a7532-8502-4401-99cc-cf04de402a3e",
+							"name": "logout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "81"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+						}
+					]
+				}
+			],
+			"id": "748a12d2-af93-410c-af8e-68b433ffdc7b"
+		},
+		{
+			"name": "userJob",
+			"item": [
+				{
+					"name": "getJobs",
+					"id": "68928747-db54-4905-9278-953197a19340",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{host}}/api/v1/profile/job",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"job"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "636e2dbe-a343-4cc4-8177-a65e17194c89",
+							"name": "logout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "81"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "getJobsById",
+					"id": "ff70ee32-8265-43ee-ac00-c910c199ad7a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{host}}/api/v1/profile/job/getById/643fbcf81184728688dd86e6",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"job",
+								"getById",
+								"643fbcf81184728688dd86e6"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "0914e9dd-5ded-4b85-9ec2-c98556837228",
+							"name": "logout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "81"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "get orders forwarded to you",
+					"id": "c0515995-b3a4-427a-b8d9-d3f9db012173",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{host}}/api/v1/profile/job/forwardedTo/driver/646df31bc1f2b81a43e335d5",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"job",
+								"forwardedTo",
+								"driver",
+								"646df31bc1f2b81a43e335d5"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "bd34a24e-771e-436c-94f4-9dd76cc19458",
+							"name": "logout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "81"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "new job",
+					"id": "235a4fdb-147d-4d0b-89df-4337d064960a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeOfWork\": \"driver\",\r\n    \"workPlace\": \"6351c3f502c30b77a5043a63\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/v1/profile/job",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"job"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "eb63f40c-bd27-4982-ab1e-62b62b5a8439",
+							"name": "logout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}:3000/api/v1/user/logout",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "81"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "delete job request",
+					"id": "e76452eb-6873-476a-a470-b623c9fcd266",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/v1/profile/job/634e749210e6dc97d483d192",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"job",
+								"634e749210e6dc97d483d192"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "df3993cf-edd2-45db-b341-6fff839a5d51",
+							"name": "logout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "81"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "forward to worktype",
+					"id": "4186c77a-592b-465f-b1a6-62ecb8208429",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jobId\": \"646df308c1f2b81a43e33585\",\n    \"orderId\": \"646dfff1c1f2b81a43e33863\"\n}"
+						},
+						"url": {
+							"raw": "https://{{host}}/api/v1/profile/job/forwardTo/pickup",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"job",
+								"forwardTo",
+								"pickup"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "83c32e06-140d-4a9e-b7aa-761df6f6b5bd"
+		},
+		{
+			"name": "workspace",
+			"item": [
+				{
+					"name": "get my employees",
+					"id": "7e9f7a11-5ac3-4d45-b1af-9ffd6b7cc83d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{host}}/api/v1/profile/workspace/64260366a62a04dcb211f21c",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"workspace",
+								"64260366a62a04dcb211f21c"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "be23abe9-cd0a-4d4a-8637-5d9f9e16152b",
+							"name": "logout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "81"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+						},
+						{
+							"id": "0bb5f613-6f2a-41e7-9116-1bd6f79e2e5a",
+							"name": "get my employees",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://{{host}}:{{PORT}}/api/v1/profile/workspace/6351c3f502c30b77a5043a63",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"api",
+										"v1",
+										"profile",
+										"workspace",
+										"6351c3f502c30b77a5043a63"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3169"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c61-1J9JOvK31krTNkafu1+OYS0ZXi0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Oct 2022 22:30:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"_id\": \"waiter\",\n            \"employees\": [\n                {\n                    \"_id\": \"6351c50002c30b77a5043ab9\",\n                    \"typeOfWork\": \"waiter\",\n                    \"workerId\": \"6351c4a702c30b77a5043aa2\",\n                    \"workPlace\": \"6351c3f502c30b77a5043a63\",\n                    \"startOfWork\": \"2022-10-20T22:00:48.000Z\",\n                    \"endOfWork\": null,\n                    \"isRejected\": false,\n                    \"isConfirmed\": true,\n                    \"orders\": [],\n                    \"workerStatus\": \"free\",\n                    \"__v\": 0,\n                    \"worker\": {\n                        \"_id\": \"6351c4a702c30b77a5043aa2\",\n                        \"first_name\": \"Student\",\n                        \"last_name\": \"Student\",\n                        \"email\": \"platek549@Student.com\",\n                        \"name\": \"Student\",\n                        \"password\": \"$2b$10$0lpyauSkUH4fhEkh/6kQUO7sBpDHj.Ko2ueR5icqGS30HAqqdzG9K\",\n                        \"phone_number\": \"783835385\",\n                        \"address\": [\n                            \"6351c4a702c30b77a5043aa0\"\n                        ],\n                        \"birth_year\": \"1997-10-17\",\n                        \"userRole\": \"Student\",\n                        \"documentImages\": [],\n                        \"jobs\": [\n                            \"6351c50002c30b77a5043ab9\",\n                            \"6351c57402c30b77a5043af1\",\n                            \"6351c5d502c30b77a5043b51\",\n                            \"6351cb2402c30b77a5043b83\"\n                        ],\n                        \"establishment\": [],\n                        \"__v\": 0\n                    }\n                }\n            ]\n        },\n        {\n            \"_id\": \"driver\",\n            \"employees\": [\n                {\n                    \"_id\": \"6351c5d502c30b77a5043b51\",\n                    \"typeOfWork\": \"driver\",\n                    \"workerId\": \"6351c4a702c30b77a5043aa2\",\n                    \"workPlace\": \"6351c3f502c30b77a5043a63\",\n                    \"startOfWork\": \"2022-10-20T22:04:16.000Z\",\n                    \"endOfWork\": null,\n                    \"isRejected\": false,\n                    \"isConfirmed\": true,\n                    \"orders\": [],\n                    \"workerStatus\": \"free\",\n                    \"__v\": 0,\n                    \"worker\": {\n                        \"_id\": \"6351c4a702c30b77a5043aa2\",\n                        \"first_name\": \"Student\",\n                        \"last_name\": \"Student\",\n                        \"email\": \"platek549@Student.com\",\n                        \"name\": \"Student\",\n                        \"password\": \"$2b$10$0lpyauSkUH4fhEkh/6kQUO7sBpDHj.Ko2ueR5icqGS30HAqqdzG9K\",\n                        \"phone_number\": \"783835385\",\n                        \"address\": [\n                            \"6351c4a702c30b77a5043aa0\"\n                        ],\n                        \"birth_year\": \"1997-10-17\",\n                        \"userRole\": \"Student\",\n                        \"documentImages\": [],\n                        \"jobs\": [\n                            \"6351c50002c30b77a5043ab9\",\n                            \"6351c57402c30b77a5043af1\",\n                            \"6351c5d502c30b77a5043b51\",\n                            \"6351cb2402c30b77a5043b83\"\n                        ],\n                        \"establishment\": [],\n                        \"__v\": 0\n                    }\n                },\n                {\n                    \"_id\": \"6351cb2402c30b77a5043b83\",\n                    \"typeOfWork\": \"driver\",\n                    \"workerId\": \"6351c4a702c30b77a5043aa2\",\n                    \"workPlace\": \"6351c3f502c30b77a5043a63\",\n                    \"startOfWork\": \"2022-10-20T22:26:55.000Z\",\n                    \"endOfWork\": null,\n                    \"isRejected\": false,\n                    \"isConfirmed\": true,\n                    \"orders\": [],\n                    \"workerStatus\": \"free\",\n                    \"__v\": 0,\n                    \"worker\": {\n                        \"_id\": \"6351c4a702c30b77a5043aa2\",\n                        \"first_name\": \"Student\",\n                        \"last_name\": \"Student\",\n                        \"email\": \"platek549@Student.com\",\n                        \"name\": \"Student\",\n                        \"password\": \"$2b$10$0lpyauSkUH4fhEkh/6kQUO7sBpDHj.Ko2ueR5icqGS30HAqqdzG9K\",\n                        \"phone_number\": \"783835385\",\n                        \"address\": [\n                            \"6351c4a702c30b77a5043aa0\"\n                        ],\n                        \"birth_year\": \"1997-10-17\",\n                        \"userRole\": \"Student\",\n                        \"documentImages\": [],\n                        \"jobs\": [\n                            \"6351c50002c30b77a5043ab9\",\n                            \"6351c57402c30b77a5043af1\",\n                            \"6351c5d502c30b77a5043b51\",\n                            \"6351cb2402c30b77a5043b83\"\n                        ],\n                        \"establishment\": [],\n                        \"__v\": 0\n                    }\n                }\n            ]\n        },\n        {\n            \"_id\": \"chef\",\n            \"employees\": [\n                {\n                    \"_id\": \"6351c57402c30b77a5043af1\",\n                    \"typeOfWork\": \"chef\",\n                    \"workerId\": \"6351c4a702c30b77a5043aa2\",\n                    \"workPlace\": \"6351c3f502c30b77a5043a63\",\n                    \"startOfWork\": \"2022-10-20T22:02:43.000Z\",\n                    \"endOfWork\": null,\n                    \"isRejected\": false,\n                    \"isConfirmed\": true,\n                    \"orders\": [],\n                    \"workerStatus\": \"free\",\n                    \"__v\": 0,\n                    \"worker\": {\n                        \"_id\": \"6351c4a702c30b77a5043aa2\",\n                        \"first_name\": \"Student\",\n                        \"last_name\": \"Student\",\n                        \"email\": \"platek549@Student.com\",\n                        \"name\": \"Student\",\n                        \"password\": \"$2b$10$0lpyauSkUH4fhEkh/6kQUO7sBpDHj.Ko2ueR5icqGS30HAqqdzG9K\",\n                        \"phone_number\": \"783835385\",\n                        \"address\": [\n                            \"6351c4a702c30b77a5043aa0\"\n                        ],\n                        \"birth_year\": \"1997-10-17\",\n                        \"userRole\": \"Student\",\n                        \"documentImages\": [],\n                        \"jobs\": [\n                            \"6351c50002c30b77a5043ab9\",\n                            \"6351c57402c30b77a5043af1\",\n                            \"6351c5d502c30b77a5043b51\",\n                            \"6351cb2402c30b77a5043b83\"\n                        ],\n                        \"establishment\": [],\n                        \"__v\": 0\n                    }\n                }\n            ]\n        }\n    ],\n    \"message\": \"\",\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "get my employees to confirm",
+					"id": "e988dbd6-b782-4e90-b130-de6c121bfbf7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{host}}/api/v1/profile/workspace/employeesToConfirm/634c97aa01b4354caebdd6bb",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"workspace",
+								"employeesToConfirm",
+								"634c97aa01b4354caebdd6bb"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "70e02c15-7a63-4047-9a0c-7ab33699e212",
+							"name": "logout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "81"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "get my employees",
+					"id": "c58d5c55-270c-452e-b0b9-d9436b85a6b0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{host}}/api/v1/profile/workspace/employeesToConfirm/634c97aa01b4354caebdd6bb",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"workspace",
+								"employeesToConfirm",
+								"634c97aa01b4354caebdd6bb"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "60fc7122-858f-42a9-8ed7-0b67ece4464d",
+							"name": "logout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "81"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "accept job",
+					"id": "ceb34a64-f805-41f8-9a84-649564f00074",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{host}}/api/v1/profile/job/accept/634ead85c516e78df3586edb",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"job",
+								"accept",
+								"634ead85c516e78df3586edb"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "4399691a-7e92-46ea-8e64-b7e45d1ebeb3",
+							"name": "logout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "81"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "dismiss job",
+					"id": "26e8f4ff-178e-40e1-9f7d-4a1d0eed9f15",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startOfWork\": \"\",\r\n    \"typeOfWork\": \"driver\",\r\n    \"workPlace\": \"62f42aba8166769d1dfba31e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/v1/profile/job/dismiss/634e749210e6dc97d483d192",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"job",
+								"dismiss",
+								"634e749210e6dc97d483d192"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "fbceb66a-cae5-4470-a445-3113e302969c",
+							"name": "logout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "81"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "reject job",
+					"id": "733400ef-860b-4952-a7ba-b62de80a22c6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startOfWork\": \"\",\r\n    \"typeOfWork\": \"driver\",\r\n    \"workPlace\": \"62f42aba8166769d1dfba31e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/v1/profile/job/reject/634e749510e6dc97d483d1bc",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"job",
+								"reject",
+								"634e749510e6dc97d483d1bc"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "7de053dc-2c76-4cfb-8153-e9dae3a358d7",
+							"name": "logout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "81"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+						}
+					]
+				}
+			],
+			"id": "8f4abdae-c2ea-49d5-95dd-3a10a1739a37"
+		},
+		{
+			"name": "wallet",
+			"item": [
+				{
+					"name": "funds",
+					"item": [
+						{
+							"name": "create wallet transactions",
+							"id": "a76eabda-8a64-4078-ab36-6e7eecf1bade",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accestoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"type\": \"recipe\",\n    \"amount\": 0.03,\n    \"description\": \"moving founds for recipe 12312312312123123\",\n    \"currency\":\"pln\",\n    \"objectId\":\"63659c0e7753c7c19d23fdab\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{host}}/api/v1/profile/wallet/founds",
+									"protocol": "http",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"profile",
+										"wallet",
+										"founds"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "b2f4f56c-9f0c-4fad-a565-a377ffdba13c"
+				},
+				{
+					"name": "create wallet",
+					"id": "9003d5ce-1e4d-47ed-aedf-98d9bbdf2638",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{host}}/api/v1/profile/wallet",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"wallet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get wallet",
+					"id": "6d54c3a8-9b58-4d5c-b968-269020426280",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"currency\":\"PLN\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{host}}/api/v1/profile/wallet",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"wallet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get wallet Copy",
+					"id": "a892c509-b24b-435f-99ff-e81bdac6230b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"currency\":\"PLN\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{host}}/api/v1/profile/wallet/transactions",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"wallet",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update wallet",
+					"id": "d8bf4a7c-a9ab-465a-8ce9-26ddfd4dbad4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"currency\":\"USD\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/v1/profile/wallet",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"wallet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete wallet",
+					"id": "e44524c3-b1ce-420c-bbb5-d621f5a5d983",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accestoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"currency\":\"PLN\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{host}}/api/v1/profile/wallet",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"wallet"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "fd675923-89ae-421a-8472-3bc49c0ac6a7"
+		},
+		{
+			"name": "my profile",
+			"id": "148575f2-6066-4541-8e5f-5d43312629ae",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accestoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{host}}/api/v1/profile",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"profile"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "7f17eddd-0331-45e2-b6ca-95aa95c1dca8",
+					"name": "logout",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "my profile document add and update",
+			"id": "77db222a-9362-4556-a1ce-c9b479e8fd39",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accestoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "documentImageFront",
+							"type": "file",
+							"src": "/Users/blinkfix.me/Downloads/front.jpeg"
+						},
+						{
+							"key": "documentImageBack",
+							"type": "file",
+							"src": "/Users/blinkfix.me/Downloads/back.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{host}}/api/v1/profile/document",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"profile",
+						"document"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "b6b59d51-7a10-46ed-a5c6-74a3aea32b8e",
+					"name": "logout",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "profile add image to user",
+			"id": "dee81b03-bfba-47b4-9cc9-c53e34e242f1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accestoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "profileImageProfile",
+							"type": "file",
+							"src": "/Users/michalmichalek/Downloads/329949798_854076925891508_1523207764918432703_n.jpg"
+						},
+						{
+							"key": "profileImageBackground",
+							"type": "file",
+							"value": null,
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://{{host}}/api/v1/profile/profileImage",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"profile",
+						"profileImage"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "397885af-96e7-4801-9ac8-f4ff54c85266",
+					"name": "logout",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "my profile info",
+			"id": "03400977-856b-4f6e-8c3d-d89c72a23fa7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accestoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Karol\",\r\n    \"last_name\": \"platko\",\r\n    \"email\": \"platek54@gmail.com\",\r\n    \"name\": \"Satyra1\",\r\n    \"phone_number\": \"123456789\",\r\n    \"address\": \"Długa 28\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/api/v1/profile",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"profile"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "ea7353e7-ef47-44f0-87de-2878030e8573",
+					"name": "logout",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "my profile address",
+			"id": "d3463437-7f46-4fb3-8a80-ca7c4f718497",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accestoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"address\": {\r\n        \"country\": \"poland\",\r\n        \"city\": \"rybna\",\r\n        \"street\": \"długa\",\r\n        \"postcode\": \"32-412\",\r\n        \"state\": \"lesserpoland\",\r\n        \"buildingnumber\": \"259\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/api/v1/profile/address/633e9ec74373326430aaf56c/633de83d167c4af379fbfb48",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"profile",
+						"address",
+						"633e9ec74373326430aaf56c",
+						"633de83d167c4af379fbfb48"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "88f2e9f2-8b9e-44ba-a7b7-7575f541a3d1",
+					"name": "logout",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "my profile address Copy",
+			"id": "e8af8bb8-f963-437c-8b2e-f84069814dea",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accestoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"country\": \"poland\",\r\n    \"city\": \"rybna\",\r\n    \"street\": \"długa\",\r\n    \"postcode\": \"32-412\",\r\n    \"state\": \"lesserpoland\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{host}}/api/v1/profile/address",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"profile",
+						"address"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "9b0281f5-3dc5-4363-a352-3b38f1722897",
+					"name": "logout",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "my establishment",
+			"id": "3c899d44-cdbb-4228-9fa9-ca2a92f5ec7b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accestoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/api/v1/profile/establishment",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"profile",
+						"establishment"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "370ab60a-f623-4ca6-867d-e16d5c7da5b9",
+					"name": "logout",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "my establishment Copy",
+			"id": "4dddbc68-69ca-4908-ab6f-4cccedb3687a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accestoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/api/v1/profile/establishment",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"profile",
+						"establishment"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "01e61f5d-06a5-4d3e-a925-8ddc5ecb9177",
+					"name": "logout",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "my orders",
+			"id": "4bf9a6cb-4ee9-432c-adab-7f85341c22fa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accestoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/api/v1/profile/order",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"profile",
+						"order"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "51d482dd-dce6-4702-b9f9-103d42f07d71",
+					"name": "logout",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "my establishment edit",
+			"id": "4dd60f00-c18b-42be-9e68-98b1c722276f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accestoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"__v\": 0,\r\n        \"_id\": \"6351c3f502c30b77a5043a63\",\r\n        \"address\": \"6351c3f502c30b77a5043a61\",\r\n        \"assortment\": [],\r\n        \"counter\": [\r\n            \"635a7669aa9761c24422f917\"\r\n        ],\r\n        \"cuisine\": [\r\n            \"6351c3b702c30b77a50438da\"\r\n        ],\r\n        \"delivery\": {\r\n            \"_id\": \"6351c3f502c30b77a5043a6c\",\r\n            \"isDelivery\": false,\r\n            \"isPickup\": true\r\n        },\r\n        \"image\": [],\r\n        \"isHalal\": false,\r\n        \"isKosher\": true,\r\n        \"isVegan\": false,\r\n        \"location\": {\r\n            \"_id\": \"6351c3f502c30b77a5043a64\",\r\n            \"coordinates\": [Array\r\n            ],\r\n            \"type\": \"Point\"\r\n        },\r\n        \"menu\": [\r\n            \"635951caf38301cb56df45b5\"\r\n        ],\r\n        \"name\": \"real test restaurant2\",\r\n        \"openHours\": [\r\n            [Object\r\n            ],\r\n            [Object\r\n            ],\r\n            [Object\r\n            ],\r\n            [Object\r\n            ],\r\n            [Object\r\n            ],\r\n            [Object\r\n            ],\r\n            [Object\r\n            ]\r\n        ],\r\n        \"owner\": \"6351c325951dcc0f3b86cdb8\",\r\n        \"reservations\": [],\r\n        \"tables\": [],\r\n        \"type\": \"restaurant\",\r\n        \"workspace\": \"6351c50002c30b77a5043abf\"\r\n    },\r\n    \"location\": [\r\n        \"37.785834\",\r\n        \"-122.406417\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/api/v1/profile/establishment",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"profile",
+						"establishment"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "9d38bea6-bfa3-4960-8eff-d985b65fbae3",
+					"name": "logout",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "my establishment position",
+			"id": "787b5703-31e3-48cf-b0b8-0f8d9dfbbf2e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accestoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"location\": [\r\n        \"0.785834\",\r\n        \"-0.406417\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{host}}/api/v1/profile/establishment/position",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"profile",
+						"establishment",
+						"position"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "c0c805f5-522e-45d8-853e-e8bd20061787",
+					"name": "logout",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "my establishment working hours",
+			"id": "a41f17aa-023f-4be2-922a-2f0909559856",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accestoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"openHours\": [\r\n        {\r\n            \"hours\": {\r\n                \"open\": \"1:00\",\r\n                \"close\": \"22:00\"\r\n            },\r\n            \"day\": \"monday\",\r\n            \"_id\": \"62f42aba8166769d1dfba320\"\r\n        },\r\n        {\r\n            \"hours\": {\r\n                \"open\": \"10:00\",\r\n                \"close\": \"22:00\"\r\n            },\r\n            \"day\": \"tuesday\",\r\n            \"_id\": \"62f42aba8166769d1dfba321\"\r\n        },\r\n        {\r\n            \"hours\": {\r\n                \"open\": \"10:00\",\r\n                \"close\": \"22:00\"\r\n            },\r\n            \"day\": \"wednesday\",\r\n            \"_id\": \"62f42aba8166769d1dfba322\"\r\n        },\r\n        {\r\n            \"hours\": {\r\n                \"open\": \"10:00\",\r\n                \"close\": \"22:00\"\r\n            },\r\n            \"day\": \"thursday\",\r\n            \"_id\": \"62f42aba8166769d1dfba323\"\r\n        },\r\n        {\r\n            \"hours\": {\r\n                \"open\": \"10:00\",\r\n                \"close\": \"22:00\"\r\n            },\r\n            \"day\": \"friday\",\r\n            \"_id\": \"62f42aba8166769d1dfba324\"\r\n        },\r\n        {\r\n            \"hours\": {\r\n                \"open\": \"10:00\",\r\n                \"close\": \"22:00\"\r\n            },\r\n            \"day\": \"saturday\",\r\n            \"_id\": \"62f42aba8166769d1dfba325\"\r\n        },\r\n        {\r\n            \"hours\": {\r\n                \"open\": \"10:00\",\r\n                \"close\": \"22:00\"\r\n            },\r\n            \"day\": \"sunday\",\r\n            \"_id\": \"62f42aba8166769d1dfba326\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/api/v1/profile/establishment/workingHours/634c97aa01b4354caebdd6bb",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"profile",
+						"establishment",
+						"workingHours",
+						"634c97aa01b4354caebdd6bb"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "704dd071-babb-47db-a6bb-c7ec446851a5",
+					"name": "logout",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sub\":\"62d00b981184383c0942fc16\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmVkMGY0N2UyYWU5NzEwZmNmYjJjMGQiLCJpYXQiOjE2NjAwNDQyOTksImV4cCI6MTY2MjYzNjI5OX0.P3e3J2h6rWt25Iy-wOVZK48uNClwuCZA0rmMThG2t8E\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}:{{PORT}}/api/v1/user/logout",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"51-fIoiLr1ylz0Qh84WLjl3ABQYzKA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 11:25:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully logged out.\",\n    \"data\": null,\n    \"error\": null\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{accesToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "86b33820-fbdd-4d2f-b266-f03fde56d419",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "2ab4c861-0ac0-41a6-89f0-ce6d26b2b717",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

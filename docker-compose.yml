@@ -1,0 +1,52 @@
+version: '3'
+volumes:
+  data:
+services:
+  blink_api:
+    depends_on:
+      - blink_mongo
+      - blink_redis
+    container_name: blink_api
+    build: .
+    ports:
+      - '3000:3000'
+    links:
+      - blink_redis
+      - blink_mongo
+    environment:
+      - APP_HOST=3000
+      - REDIS_PORT=6379
+      - MONGO_USERNAME=user
+      - MONGO_PASSWORD=password
+      - IMAGE_FILE_PATH=/home/karol/domains/domena.pl/public_html
+    networks:
+      - blink_api
+    restart: unless-stopped
+  blink_mongo:
+    image: mongo:latest
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=user
+      - MONGO_INITDB_ROOT_PASSWORD=password
+      - MONGO_INITDB_DATABASE=test
+      - JWT_ACCESS_SECRET='adfasdfqwerq1234qrerq14235sreqerq145afdfdafasdfadfas'
+      - JWT_REFRESH_KEY='rq14235sreqerq145afdfdafwerq1234qrerq142adfasdfqwerq1234qreasdfadfas'
+      - JWT_ACCESS_TIME='15m'
+      - JWT_REFRESH_TIME='30d'
+    ports:
+      - 27017:27017
+    volumes:
+      - data:/data/mongodbdata
+    networks:
+      - blink_api
+
+  blink_redis:
+    image: redis:alpine
+    volumes:
+      - data:/data/redisdbdata
+    ports:
+      - 6379:6379
+    networks:
+      - blink_api
+    restart: unless-stopped
+networks:
+  blink_api:

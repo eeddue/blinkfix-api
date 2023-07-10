@@ -1,0 +1,1472 @@
+[
+  {
+    "CodeURL": "aa",
+    "NameEnglish": "Afar",
+    "NameNative": "Qafár af"
+  },
+  {
+    "CodeURL": "ab",
+    "NameEnglish": "Abkhaz",
+    "NameNative": "Аҧсшәа"
+  },
+  {
+    "CodeURL": "ace",
+    "NameEnglish": "Achinese",
+    "NameNative": "Acèh"
+  },
+  {
+    "CodeURL": "af",
+    "NameEnglish": "Afrikaans",
+    "NameNative": "Afrikaans"
+  },
+  {
+    "CodeURL": "ak",
+    "NameEnglish": "Akan",
+    "NameNative": "Akan"
+  },
+  {
+    "CodeURL": "als",
+    "NameEnglish": "Alemannic",
+    "NameNative": "Alemannisch"
+  },
+  {
+    "CodeURL": "am",
+    "NameEnglish": "Amharic",
+    "NameNative": "አማርኛ"
+  },
+  {
+    "CodeURL": "an",
+    "NameEnglish": "Aragonese",
+    "NameNative": "aragonés"
+  },
+  {
+    "CodeURL": "ang",
+    "NameEnglish": "Old English",
+    "NameNative": "Ænglisc"
+  },
+  {
+    "CodeURL": "ar",
+    "NameEnglish": "Arabic",
+    "NameNative": "العربية"
+  },
+  {
+    "CodeURL": "arc",
+    "NameEnglish": "Official Aramaic",
+    "NameNative": "ܐܪܡܝܐ"
+  },
+  {
+    "CodeURL": "arz",
+    "NameEnglish": "Egyptian Arabic",
+    "NameNative": "مصرى"
+  },
+  {
+    "CodeURL": "as",
+    "NameEnglish": "Assamese",
+    "NameNative": "অসমীয়া"
+  },
+  {
+    "CodeURL": "ast",
+    "NameEnglish": "Asturian",
+    "NameNative": "asturianu"
+  },
+  {
+    "CodeURL": "av",
+    "NameEnglish": "Avaric",
+    "NameNative": "авар"
+  },
+  {
+    "CodeURL": "ay",
+    "NameEnglish": "Aymara",
+    "NameNative": "Aymar aru"
+  },
+  {
+    "CodeURL": "az",
+    "NameEnglish": "Azerbaijani",
+    "NameNative": "azərbaycanca"
+  },
+  {
+    "CodeURL": "ba",
+    "NameEnglish": "Bashkir",
+    "NameNative": "башҡортса"
+  },
+  {
+    "CodeURL": "bar",
+    "NameEnglish": "Bavarian",
+    "NameNative": "Boarisch"
+  },
+  {
+    "CodeURL": "bat-smg",
+    "NameEnglish": "Samogitian",
+    "NameNative": "žemaitėška"
+  },
+  {
+    "CodeURL": "bcl",
+    "NameEnglish": "Central Bikol",
+    "NameNative": "Bikol Central"
+  },
+  {
+    "CodeURL": "be",
+    "NameEnglish": "Belarussian",
+    "NameNative": "беларуская"
+  },
+  {
+    "CodeURL": "be-tarask",
+    "NameEnglish": "Belarussian Taraškievica",
+    "NameNative": "беларуская (тарашкевіца)‎"
+  },
+  {
+    "CodeURL": "bg",
+    "NameEnglish": "Bulgarian",
+    "NameNative": "български"
+  },
+  {
+    "CodeURL": "bh",
+    "NameEnglish": "Bhojpuri",
+    "NameNative": "भोजपुरी"
+  },
+  {
+    "CodeURL": "bi",
+    "NameEnglish": "Bislama",
+    "NameNative": "Bislama"
+  },
+  {
+    "CodeURL": "bjn",
+    "NameEnglish": "Banjar",
+    "NameNative": "Bahasa Banjar"
+  },
+  {
+    "CodeURL": "bm",
+    "NameEnglish": "Bamanakan/Bambara",
+    "NameNative": "bamanankan"
+  },
+  {
+    "CodeURL": "bn",
+    "NameEnglish": "Bengali",
+    "NameNative": "বাংলা"
+  },
+  {
+    "CodeURL": "bo",
+    "NameEnglish": "Tibetan",
+    "NameNative": "བོད་ཡིག"
+  },
+  {
+    "CodeURL": "bpy",
+    "NameEnglish": "Bishnupriya Manipuri",
+    "NameNative": "বিষ্ণুপ্রিয়া মণিপুরী"
+  },
+  {
+    "CodeURL": "br",
+    "NameEnglish": "Breton",
+    "NameNative": "brezhoneg"
+  },
+  {
+    "CodeURL": "bs",
+    "NameEnglish": "Bosnian",
+    "NameNative": "bosanski"
+  },
+  {
+    "CodeURL": "bug",
+    "NameEnglish": "Buginese",
+    "NameNative": "ᨅᨔ ᨕᨘᨁᨗ"
+  },
+  {
+    "CodeURL": "bxr",
+    "NameEnglish": "Russia Buriat",
+    "NameNative": "буряад"
+  },
+  {
+    "CodeURL": "ca",
+    "NameEnglish": "Catalan; Valencian",
+    "NameNative": "català"
+  },
+  {
+    "CodeURL": "cbk-zam",
+    "NameEnglish": "Chavacano de Zamboanga",
+    "NameNative": "Chavacano de Zamboanga"
+  },
+  {
+    "CodeURL": "cdo",
+    "NameEnglish": "Min Dong Chinese",
+    "NameNative": "Mìng-dĕ̤ng-ngṳ̄"
+  },
+  {
+    "CodeURL": "ce",
+    "NameEnglish": "Chechen",
+    "NameNative": "нохчийн"
+  },
+  {
+    "CodeURL": "ceb",
+    "NameEnglish": "Cebuano",
+    "NameNative": "Cebuano"
+  },
+  {
+    "CodeURL": "ch",
+    "NameEnglish": "Chamorro",
+    "NameNative": "Chamoru"
+  },
+  {
+    "CodeURL": "cho",
+    "NameEnglish": "Choctaw",
+    "NameNative": "Choctaw"
+  },
+  {
+    "CodeURL": "chr",
+    "NameEnglish": "Cherokee",
+    "NameNative": "ᏣᎳᎩ"
+  },
+  {
+    "CodeURL": "chy",
+    "NameEnglish": "Cheyenne",
+    "NameNative": "Tsetsêhestâhese"
+  },
+  {
+    "CodeURL": "ckb",
+    "NameEnglish": "Central Kurdish/Kurdish Sorani",
+    "NameNative": "کوردی"
+  },
+  {
+    "CodeURL": "co",
+    "NameEnglish": "Corsican",
+    "NameNative": "corsu"
+  },
+  {
+    "CodeURL": "cr",
+    "NameEnglish": "Cree",
+    "NameNative": "Nēhiyawēwin / ᓀᐦᐃᔭᐍᐏᐣ"
+  },
+  {
+    "CodeURL": "crh",
+    "NameEnglish": "Crimean Tatar",
+    "NameNative": "qırımtatarca"
+  },
+  {
+    "CodeURL": "cs",
+    "NameEnglish": "Czech",
+    "NameNative": "česky"
+  },
+  {
+    "CodeURL": "csb",
+    "NameEnglish": "Kashubian",
+    "NameNative": "kaszëbsczi"
+  },
+  {
+    "CodeURL": "cu",
+    "NameEnglish": "Church Slavic",
+    "NameNative": "словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ"
+  },
+  {
+    "CodeURL": "cv",
+    "NameEnglish": "Chuvash",
+    "NameNative": "Чӑвашла"
+  },
+  {
+    "CodeURL": "cy",
+    "NameEnglish": "Welsh",
+    "NameNative": "Cymraeg"
+  },
+  {
+    "CodeURL": "da",
+    "NameEnglish": "Danish",
+    "NameNative": "dansk"
+  },
+  {
+    "CodeURL": "de",
+    "NameEnglish": "German",
+    "NameNative": "Deutsch"
+  },
+  {
+    "CodeURL": "diq",
+    "NameEnglish": "Dimli (individual language)",
+    "NameNative": "Zazaki"
+  },
+  {
+    "CodeURL": "dsb",
+    "NameEnglish": "Lower Sobian",
+    "NameNative": "dolnoserbski"
+  },
+  {
+    "CodeURL": "dv",
+    "NameEnglish": "Divehi",
+    "NameNative": "ދިވެހިބަސް"
+  },
+  {
+    "CodeURL": "dz",
+    "NameEnglish": "Dzongkha",
+    "NameNative": "ཇོང་ཁ"
+  },
+  {
+    "CodeURL": "ee",
+    "NameEnglish": "Ewe",
+    "NameNative": "eʋegbe"
+  },
+  {
+    "CodeURL": "el",
+    "NameEnglish": "Greek",
+    "NameNative": "Ελληνικά"
+  },
+  {
+    "CodeURL": "eml",
+    "NameEnglish": "Emiliano-Romagnolo",
+    "NameNative": "emiliàn e rumagnòl"
+  },
+  {
+    "CodeURL": "en",
+    "NameEnglish": "English",
+    "NameNative": "English"
+  },
+  {
+    "CodeURL": "eo",
+    "NameEnglish": "Esperanto",
+    "NameNative": "Esperanto"
+  },
+  {
+    "CodeURL": "es",
+    "NameEnglish": "Spanish",
+    "NameNative": "español"
+  },
+  {
+    "CodeURL": "et",
+    "NameEnglish": "Estonian",
+    "NameNative": "eesti"
+  },
+  {
+    "CodeURL": "eu",
+    "NameEnglish": "Basque",
+    "NameNative": "euskara"
+  },
+  {
+    "CodeURL": "ext",
+    "NameEnglish": "Extremaduran",
+    "NameNative": "estremeñu"
+  },
+  {
+    "CodeURL": "fa",
+    "NameEnglish": "Persian",
+    "NameNative": "فارسی"
+  },
+  {
+    "CodeURL": "ff",
+    "NameEnglish": "Fulah",
+    "NameNative": "Fulfulde"
+  },
+  {
+    "CodeURL": "fi",
+    "NameEnglish": "Finnish",
+    "NameNative": "suomi"
+  },
+  {
+    "CodeURL": "fiu-vro",
+    "NameEnglish": "Võro",
+    "NameNative": "Võro"
+  },
+  {
+    "CodeURL": "fj",
+    "NameEnglish": "Fijian",
+    "NameNative": "Na Vosa Vakaviti"
+  },
+  {
+    "CodeURL": "fo",
+    "NameEnglish": "Faroese",
+    "NameNative": "føroyskt"
+  },
+  {
+    "CodeURL": "fr",
+    "NameEnglish": "French",
+    "NameNative": "français"
+  },
+  {
+    "CodeURL": "frp",
+    "NameEnglish": "Arpitan",
+    "NameNative": "arpetan"
+  },
+  {
+    "CodeURL": "frr",
+    "NameEnglish": "Northern Frisian",
+    "NameNative": "Nordfriisk"
+  },
+  {
+    "CodeURL": "fur",
+    "NameEnglish": "Friulian",
+    "NameNative": "furlan"
+  },
+  {
+    "CodeURL": "fy",
+    "NameEnglish": "Western Frisian",
+    "NameNative": "Frysk"
+  },
+  {
+    "CodeURL": "ga",
+    "NameEnglish": "Irish",
+    "NameNative": "Gaeilge"
+  },
+  {
+    "CodeURL": "gag",
+    "NameEnglish": "Gagauz",
+    "NameNative": "Gagauz"
+  },
+  {
+    "CodeURL": "gan",
+    "NameEnglish": "Gan Chinese",
+    "NameNative": "贛語"
+  },
+  {
+    "CodeURL": "gd",
+    "NameEnglish": "Gaelic; Scottish Gaelic",
+    "NameNative": "Gàidhlig"
+  },
+  {
+    "CodeURL": "gl",
+    "NameEnglish": "Galician",
+    "NameNative": "galego"
+  },
+  {
+    "CodeURL": "glk",
+    "NameEnglish": "Gilaki",
+    "NameNative": "گیلکی"
+  },
+  {
+    "CodeURL": "gn",
+    "NameEnglish": "Guarani",
+    "NameNative": "Avañe'ẽ"
+  },
+  {
+    "CodeURL": "got",
+    "NameEnglish": "Gothic",
+    "NameNative": "𐌲𐌿𐍄𐌹𐍃𐌺"
+  },
+  {
+    "CodeURL": "gu",
+    "NameEnglish": "Gujarati",
+    "NameNative": "ગુજરાતી"
+  },
+  {
+    "CodeURL": "gv",
+    "NameEnglish": "Manx",
+    "NameNative": "Gaelg"
+  },
+  {
+    "CodeURL": "ha",
+    "NameEnglish": "Hausa",
+    "NameNative": "Hausa"
+  },
+  {
+    "CodeURL": "hak",
+    "NameEnglish": "Hakka Chinese",
+    "NameNative": "Hak-kâ-fa"
+  },
+  {
+    "CodeURL": "haw",
+    "NameEnglish": "Hawaiian",
+    "NameNative": "Hawai`i"
+  },
+  {
+    "CodeURL": "he",
+    "NameEnglish": "Hebrew",
+    "NameNative": "עברית"
+  },
+  {
+    "CodeURL": "hi",
+    "NameEnglish": "Hindi",
+    "NameNative": "हिन्दी"
+  },
+  {
+    "CodeURL": "hif",
+    "NameEnglish": "Fiji Hindi",
+    "NameNative": "Fiji Hindi"
+  },
+  {
+    "CodeURL": "ho",
+    "NameEnglish": "Hiri Motu",
+    "NameNative": "Hiri Motu"
+  },
+  {
+    "CodeURL": "hr",
+    "NameEnglish": "Croatian",
+    "NameNative": "hrvatski"
+  },
+  {
+    "CodeURL": "hsb",
+    "NameEnglish": "Upper Sorbian",
+    "NameNative": "hornjoserbsce"
+  },
+  {
+    "CodeURL": "ht",
+    "NameEnglish": "Haitian; Haitian Creole",
+    "NameNative": "Kreyòl ayisyen"
+  },
+  {
+    "CodeURL": "hu",
+    "NameEnglish": "Hungarian",
+    "NameNative": "magyar"
+  },
+  {
+    "CodeURL": "hy",
+    "NameEnglish": "Armenian",
+    "NameNative": "Հայերեն"
+  },
+  {
+    "CodeURL": "hz",
+    "NameEnglish": "Herero",
+    "NameNative": "Otsiherero"
+  },
+  {
+    "CodeURL": "ia",
+    "NameEnglish": "Interlingua",
+    "NameNative": "interlingua"
+  },
+  {
+    "CodeURL": "id",
+    "NameEnglish": "Indonesian",
+    "NameNative": "Bahasa Indonesia"
+  },
+  {
+    "CodeURL": "ie",
+    "NameEnglish": "Interlingue; Occidental",
+    "NameNative": "Interlingue"
+  },
+  {
+    "CodeURL": "ig",
+    "NameEnglish": "Igbo",
+    "NameNative": "Igbo"
+  },
+  {
+    "CodeURL": "ii",
+    "NameEnglish": "Sichuan Yi; Nuosu",
+    "NameNative": "ꆇꉙ"
+  },
+  {
+    "CodeURL": "ik",
+    "NameEnglish": "Inupiaq",
+    "NameNative": "Iñupiak"
+  },
+  {
+    "CodeURL": "ilo",
+    "NameEnglish": "Iloko",
+    "NameNative": "Ilokano"
+  },
+  {
+    "CodeURL": "io",
+    "NameEnglish": "Ido",
+    "NameNative": "Ido"
+  },
+  {
+    "CodeURL": "is",
+    "NameEnglish": "Icelandic",
+    "NameNative": "íslenska"
+  },
+  {
+    "CodeURL": "it",
+    "NameEnglish": "Italian",
+    "NameNative": "italiano"
+  },
+  {
+    "CodeURL": "iu",
+    "NameEnglish": "Inuktitut",
+    "NameNative": "ᐃᓄᒃᑎᑐᑦ/inuktitut"
+  },
+  {
+    "CodeURL": "ja",
+    "NameEnglish": "Japanese",
+    "NameNative": "日本語"
+  },
+  {
+    "CodeURL": "jbo",
+    "NameEnglish": "Lojban",
+    "NameNative": "Lojban"
+  },
+  {
+    "CodeURL": "jv",
+    "NameEnglish": "Javanese",
+    "NameNative": "Basa Jawa"
+  },
+  {
+    "CodeURL": "ka",
+    "NameEnglish": "Georgian",
+    "NameNative": "ქართული"
+  },
+  {
+    "CodeURL": "kaa",
+    "NameEnglish": "Kara-Kalpak",
+    "NameNative": "Qaraqalpaqsha"
+  },
+  {
+    "CodeURL": "kab",
+    "NameEnglish": "Kabyle",
+    "NameNative": "Taqbaylit"
+  },
+  {
+    "CodeURL": "kbd",
+    "NameEnglish": "Kabardian",
+    "NameNative": "Адыгэбзэ"
+  },
+  {
+    "CodeURL": "kg",
+    "NameEnglish": "Kongo",
+    "NameNative": "Kongo"
+  },
+  {
+    "CodeURL": "ki",
+    "NameEnglish": "Kikuyu; Gikuyu",
+    "NameNative": "Gĩkũyũ"
+  },
+  {
+    "CodeURL": "kj",
+    "NameEnglish": "Kwanyama",
+    "NameNative": "Kwanyama"
+  },
+  {
+    "CodeURL": "kk",
+    "NameEnglish": "Kazakh",
+    "NameNative": "қазақша"
+  },
+  {
+    "CodeURL": "kl",
+    "NameEnglish": "Kalaallisut; Greenlandic",
+    "NameNative": "kalaallisut"
+  },
+  {
+    "CodeURL": "km",
+    "NameEnglish": "Central Khmer",
+    "NameNative": "ភាសាខ្មែរ"
+  },
+  {
+    "CodeURL": "kn",
+    "NameEnglish": "Kannada",
+    "NameNative": "ಕನ್ನಡ"
+  },
+  {
+    "CodeURL": "ko",
+    "NameEnglish": "Korean",
+    "NameNative": "한국어"
+  },
+  {
+    "CodeURL": "koi",
+    "NameEnglish": "Komi-Permyak",
+    "NameNative": "Перем Коми"
+  },
+  {
+    "CodeURL": "kr",
+    "NameEnglish": "Kanuri",
+    "NameNative": "Kanuri"
+  },
+  {
+    "CodeURL": "krc",
+    "NameEnglish": "Karachay-Balkar",
+    "NameNative": "къарачай-малкъар"
+  },
+  {
+    "CodeURL": "ks",
+    "NameEnglish": "Kashmiri",
+    "NameNative": "कॉशुर / کٲشُر"
+  },
+  {
+    "CodeURL": "ksh",
+    "NameEnglish": "Kölsch",
+    "NameNative": "Ripoarisch"
+  },
+  {
+    "CodeURL": "ku",
+    "NameEnglish": "Kurdish",
+    "NameNative": "Kurdî"
+  },
+  {
+    "CodeURL": "kv",
+    "NameEnglish": "Komi",
+    "NameNative": "коми"
+  },
+  {
+    "CodeURL": "kw",
+    "NameEnglish": "Cornish",
+    "NameNative": "kernowek"
+  },
+  {
+    "CodeURL": "ky",
+    "NameEnglish": "Kyrgyz",
+    "NameNative": "Кыргызча"
+  },
+  {
+    "CodeURL": "la",
+    "NameEnglish": "Latin",
+    "NameNative": "Latina"
+  },
+  {
+    "CodeURL": "lad",
+    "NameEnglish": "Ladino",
+    "NameNative": "Ladino"
+  },
+  {
+    "CodeURL": "lb",
+    "NameEnglish": "Luxembourgish",
+    "NameNative": "Lëtzebuergesch"
+  },
+  {
+    "CodeURL": "lbe",
+    "NameEnglish": "Lak",
+    "NameNative": "лакку"
+  },
+  {
+    "CodeURL": "lez",
+    "NameEnglish": "Lezghian",
+    "NameNative": "лезги"
+  },
+  {
+    "CodeURL": "lg",
+    "NameEnglish": "Ganda",
+    "NameNative": "Luganda"
+  },
+  {
+    "CodeURL": "li",
+    "NameEnglish": "Limburgan",
+    "NameNative": "Limburgs"
+  },
+  {
+    "CodeURL": "lij",
+    "NameEnglish": "Ligurian",
+    "NameNative": "Ligure"
+  },
+  {
+    "CodeURL": "lmo",
+    "NameEnglish": "Lombard",
+    "NameNative": "lumbaart"
+  },
+  {
+    "CodeURL": "ln",
+    "NameEnglish": "Lingala",
+    "NameNative": "lingála"
+  },
+  {
+    "CodeURL": "lo",
+    "NameEnglish": "Lao",
+    "NameNative": "ລາວ"
+  },
+  {
+    "CodeURL": "lt",
+    "NameEnglish": "Lithuanian",
+    "NameNative": "lietuvių"
+  },
+  {
+    "CodeURL": "ltg",
+    "NameEnglish": "Latgalian",
+    "NameNative": "latgaļu"
+  },
+  {
+    "CodeURL": "lv",
+    "NameEnglish": "Latvian",
+    "NameNative": "latviešu"
+  },
+  {
+    "CodeURL": "map-bms",
+    "NameEnglish": "Basa Banyumasan",
+    "NameNative": "Basa Banyumasan"
+  },
+  {
+    "CodeURL": "mdf",
+    "NameEnglish": "Moksha",
+    "NameNative": "мокшень"
+  },
+  {
+    "CodeURL": "mg",
+    "NameEnglish": "Malagasy",
+    "NameNative": "Malagasy"
+  },
+  {
+    "CodeURL": "mh",
+    "NameEnglish": "Marshallese",
+    "NameNative": "Ebon"
+  },
+  {
+    "CodeURL": "mhr",
+    "NameEnglish": "Eastern Mari",
+    "NameNative": "олык марий"
+  },
+  {
+    "CodeURL": "mi",
+    "NameEnglish": "Maori",
+    "NameNative": "Māori"
+  },
+  {
+    "CodeURL": "min",
+    "NameEnglish": "Minangkabau",
+    "NameNative": "Baso Minangkabau"
+  },
+  {
+    "CodeURL": "mk",
+    "NameEnglish": "Macedonian",
+    "NameNative": "македонски"
+  },
+  {
+    "CodeURL": "ml",
+    "NameEnglish": "Malayalam",
+    "NameNative": "മലയാളം"
+  },
+  {
+    "CodeURL": "mn",
+    "NameEnglish": "Mongolian",
+    "NameNative": "монгол"
+  },
+  {
+    "CodeURL": "mo",
+    "NameEnglish": "Moldovan",
+    "NameNative": "молдовеняскэ"
+  },
+  {
+    "CodeURL": "mr",
+    "NameEnglish": "Marathi",
+    "NameNative": "मराठी"
+  },
+  {
+    "CodeURL": "mrj",
+    "NameEnglish": "Westrn Mari",
+    "NameNative": "кырык мары"
+  },
+  {
+    "CodeURL": "ms",
+    "NameEnglish": "Malay",
+    "NameNative": "Bahasa Melayu"
+  },
+  {
+    "CodeURL": "mt",
+    "NameEnglish": "Maltese",
+    "NameNative": "Malti"
+  },
+  {
+    "CodeURL": "mus",
+    "NameEnglish": "Creek",
+    "NameNative": "Mvskoke"
+  },
+  {
+    "CodeURL": "mwl",
+    "NameEnglish": "Mirandese",
+    "NameNative": "Mirandés"
+  },
+  {
+    "CodeURL": "my",
+    "NameEnglish": "Burmese",
+    "NameNative": "မြန်မာဘာသာ"
+  },
+  {
+    "CodeURL": "myv",
+    "NameEnglish": "Erzya",
+    "NameNative": "эрзянь"
+  },
+  {
+    "CodeURL": "mzn",
+    "NameEnglish": "Mazanderani",
+    "NameNative": "مازِرونی"
+  },
+  {
+    "CodeURL": "na",
+    "NameEnglish": "Nauru",
+    "NameNative": "Dorerin Naoero"
+  },
+  {
+    "CodeURL": "nah",
+    "NameEnglish": "Nahuatl Languages",
+    "NameNative": "Nāhuatl"
+  },
+  {
+    "CodeURL": "nap",
+    "NameEnglish": "Neopolitan",
+    "NameNative": "Nnapulitano"
+  },
+  {
+    "CodeURL": "nds",
+    "NameEnglish": "Low Saxon",
+    "NameNative": "Plattdüütsch"
+  },
+  {
+    "CodeURL": "nds-nl",
+    "NameEnglish": "Low Saxon (Netherlands)",
+    "NameNative": "Nedersaksies"
+  },
+  {
+    "CodeURL": "ne",
+    "NameEnglish": "Nepali",
+    "NameNative": "नेपाली"
+  },
+  {
+    "CodeURL": "new",
+    "NameEnglish": "Nepal Bhasa/Newari",
+    "NameNative": "नेपाल भाषा"
+  },
+  {
+    "CodeURL": "ng",
+    "NameEnglish": "Ndonga",
+    "NameNative": "Oshiwambo"
+  },
+  {
+    "CodeURL": "nl",
+    "NameEnglish": "Dutch",
+    "NameNative": "Nederlands"
+  },
+  {
+    "CodeURL": "nn",
+    "NameEnglish": "Norwegian (Nynorsk)",
+    "NameNative": "norsk (nynorsk)‎"
+  },
+  {
+    "CodeURL": "no",
+    "NameEnglish": "Norwegian (Bokmål)",
+    "NameNative": "norsk (bokmål)"
+  },
+  {
+    "CodeURL": "nov",
+    "NameEnglish": "Novial",
+    "NameNative": "ovial"
+  },
+  {
+    "CodeURL": "nrm",
+    "NameEnglish": "Nouormand",
+    "NameNative": "Nouormand"
+  },
+  {
+    "CodeURL": "nso",
+    "NameEnglish": "Northern Sotho",
+    "NameNative": "Sesotho sa Leboa"
+  },
+  {
+    "CodeURL": "nv",
+    "NameEnglish": "Navajo",
+    "NameNative": "Diné bizaad"
+  },
+  {
+    "CodeURL": "ny",
+    "NameEnglish": "Chichewa/Nyanja",
+    "NameNative": "Chi-Chewa"
+  },
+  {
+    "CodeURL": "oc",
+    "NameEnglish": "Occitan",
+    "NameNative": "occitan"
+  },
+  {
+    "CodeURL": "om",
+    "NameEnglish": "Ossetian",
+    "NameNative": "Oromoo"
+  },
+  {
+    "CodeURL": "or",
+    "NameEnglish": "Odia",
+    "NameNative": "ଓଡ଼ିଆ"
+  },
+  {
+    "CodeURL": "os",
+    "NameEnglish": "Ossetian",
+    "NameNative": "Ирон"
+  },
+  {
+    "CodeURL": "pa",
+    "NameEnglish": "Punjabi",
+    "NameNative": "ਪੰਜਾਬੀ"
+  },
+  {
+    "CodeURL": "pag",
+    "NameEnglish": "Pangasinan",
+    "NameNative": "Pangasinan"
+  },
+  {
+    "CodeURL": "pam",
+    "NameEnglish": "Pampanga",
+    "NameNative": "Kapampangan"
+  },
+  {
+    "CodeURL": "pap",
+    "NameEnglish": "Papiamento",
+    "NameNative": "Papiamentu"
+  },
+  {
+    "CodeURL": "pcd",
+    "NameEnglish": "Picard",
+    "NameNative": "Picard"
+  },
+  {
+    "CodeURL": "pdc",
+    "NameEnglish": "Pennsylvania German",
+    "NameNative": "Deitsch"
+  },
+  {
+    "CodeURL": "pfl",
+    "NameEnglish": "Pfaelzisch",
+    "NameNative": "Pälzisch"
+  },
+  {
+    "CodeURL": "pi",
+    "NameEnglish": "Pali",
+    "NameNative": "पालि"
+  },
+  {
+    "CodeURL": "pih",
+    "NameEnglish": "Pitcairn-Norfolk",
+    "NameNative": "Norfuk / Pitkern"
+  },
+  {
+    "CodeURL": "pl",
+    "NameEnglish": "Polish",
+    "NameNative": "polski"
+  },
+  {
+    "CodeURL": "pms",
+    "NameEnglish": "Piedmontese",
+    "NameNative": "Piemontèis"
+  },
+  {
+    "CodeURL": "pnb",
+    "NameEnglish": "Western Punjabi",
+    "NameNative": "پنجابی"
+  },
+  {
+    "CodeURL": "pnt",
+    "NameEnglish": "Pontic",
+    "NameNative": "Ποντιακά"
+  },
+  {
+    "CodeURL": "ps",
+    "NameEnglish": "Pashto",
+    "NameNative": "پښتو"
+  },
+  {
+    "CodeURL": "pt",
+    "NameEnglish": "Portuguese",
+    "NameNative": "português"
+  },
+  {
+    "CodeURL": "qu",
+    "NameEnglish": "Quechuan (Runa Simi)",
+    "NameNative": "Runa Simi"
+  },
+  {
+    "CodeURL": "rm",
+    "NameEnglish": "Romansh",
+    "NameNative": "rumantsch"
+  },
+  {
+    "CodeURL": "rmy",
+    "NameEnglish": "Romani",
+    "NameNative": "Romani"
+  },
+  {
+    "CodeURL": "rn",
+    "NameEnglish": "Rundi",
+    "NameNative": "Kirundi"
+  },
+  {
+    "CodeURL": "ro",
+    "NameEnglish": "Romanian",
+    "NameNative": "română"
+  },
+  {
+    "CodeURL": "roa-rup",
+    "NameEnglish": "Aromanian",
+    "NameNative": "Armãneashce"
+  },
+  {
+    "CodeURL": "roa-tara",
+    "NameEnglish": "Tarantino",
+    "NameNative": "tarandíne"
+  },
+  {
+    "CodeURL": "ru",
+    "NameEnglish": "Russian",
+    "NameNative": "русский"
+  },
+  {
+    "CodeURL": "rue",
+    "NameEnglish": "Rusyn",
+    "NameNative": "русиньскый"
+  },
+  {
+    "CodeURL": "rw",
+    "NameEnglish": "Kinyarwanda",
+    "NameNative": "Kinyarwanda"
+  },
+  {
+    "CodeURL": "sa",
+    "NameEnglish": "Sanskrit",
+    "NameNative": "संस्कृतम्"
+  },
+  {
+    "CodeURL": "sah",
+    "NameEnglish": "Yakut",
+    "NameNative": "саха тыла"
+  },
+  {
+    "CodeURL": "sc",
+    "NameEnglish": "Sardinian",
+    "NameNative": "sardu"
+  },
+  {
+    "CodeURL": "scn",
+    "NameEnglish": "Sicilian",
+    "NameNative": "sicilianu"
+  },
+  {
+    "CodeURL": "sco",
+    "NameEnglish": "Scots",
+    "NameNative": "Scots"
+  },
+  {
+    "CodeURL": "sd",
+    "NameEnglish": "Sindhi",
+    "NameNative": "سنڌي"
+  },
+  {
+    "CodeURL": "se",
+    "NameEnglish": "Northern Sami",
+    "NameNative": "sámegiella"
+  },
+  {
+    "CodeURL": "sg",
+    "NameEnglish": "Sango",
+    "NameNative": "Sängö"
+  },
+  {
+    "CodeURL": "sh",
+    "NameEnglish": "Serbo-Croatian",
+    "NameNative": "srpskohrvatski / српскохрватски"
+  },
+  {
+    "CodeURL": "si",
+    "NameEnglish": "Sinhala",
+    "NameNative": "සිංහල"
+  },
+  {
+    "CodeURL": "simple",
+    "NameEnglish": "Simple English",
+    "NameNative": "Simple English"
+  },
+  {
+    "CodeURL": "sk",
+    "NameEnglish": "Slovak",
+    "NameNative": "slovenčina"
+  },
+  {
+    "CodeURL": "sl",
+    "NameEnglish": "Slovenian",
+    "NameNative": "slovenščina"
+  },
+  {
+    "CodeURL": "sm",
+    "NameEnglish": "Samoan",
+    "NameNative": "Gagana Samoa"
+  },
+  {
+    "CodeURL": "sn",
+    "NameEnglish": "Shona",
+    "NameNative": "chiShona"
+  },
+  {
+    "CodeURL": "so",
+    "NameEnglish": "Somali",
+    "NameNative": "Soomaaliga"
+  },
+  {
+    "CodeURL": "sq",
+    "NameEnglish": "Albanian",
+    "NameNative": "shqip"
+  },
+  {
+    "CodeURL": "sr",
+    "NameEnglish": "Serbian",
+    "NameNative": "српски / srpski"
+  },
+  {
+    "CodeURL": "srn",
+    "NameEnglish": "Sranan Tongo",
+    "NameNative": "Sranantongo"
+  },
+  {
+    "CodeURL": "ss",
+    "NameEnglish": "Swati",
+    "NameNative": "SiSwati"
+  },
+  {
+    "CodeURL": "st",
+    "NameEnglish": "Southern Sotho",
+    "NameNative": "Sesotho"
+  },
+  {
+    "CodeURL": "stq",
+    "NameEnglish": "Saterlandic",
+    "NameNative": "Seeltersk"
+  },
+  {
+    "CodeURL": "su",
+    "NameEnglish": "Sundanese",
+    "NameNative": "Basa Sunda"
+  },
+  {
+    "CodeURL": "sv",
+    "NameEnglish": "Swedish",
+    "NameNative": "svenska"
+  },
+  {
+    "CodeURL": "sw",
+    "NameEnglish": "Swahili",
+    "NameNative": "Kiswahili"
+  },
+  {
+    "CodeURL": "szl",
+    "NameEnglish": "Silesian",
+    "NameNative": "ślůnski"
+  },
+  {
+    "CodeURL": "ta",
+    "NameEnglish": "Tamil",
+    "NameNative": "தமிழ்"
+  },
+  {
+    "CodeURL": "te",
+    "NameEnglish": "Telugu",
+    "NameNative": "తెలుగు"
+  },
+  {
+    "CodeURL": "tet",
+    "NameEnglish": "Tetum",
+    "NameNative": "tetun"
+  },
+  {
+    "CodeURL": "tg",
+    "NameEnglish": "Tajik",
+    "NameNative": "тоҷикӣ"
+  },
+  {
+    "CodeURL": "th",
+    "NameEnglish": "Thai",
+    "NameNative": "ไทย"
+  },
+  {
+    "CodeURL": "ti",
+    "NameEnglish": "Tigrinya",
+    "NameNative": "ትግርኛ"
+  },
+  {
+    "CodeURL": "tk",
+    "NameEnglish": "Turkmen",
+    "NameNative": "Türkmençe"
+  },
+  {
+    "CodeURL": "tl",
+    "NameEnglish": "Tagalog",
+    "NameNative": "Tagalog"
+  },
+  {
+    "CodeURL": "tn",
+    "NameEnglish": "Tswana",
+    "NameNative": "Setswana"
+  },
+  {
+    "CodeURL": "to",
+    "NameEnglish": "Tonga (Tonga Islands)",
+    "NameNative": "lea faka-Tonga"
+  },
+  {
+    "CodeURL": "tpi",
+    "NameEnglish": "Tok Pisin",
+    "NameNative": "Tok Pisin"
+  },
+  {
+    "CodeURL": "tr",
+    "NameEnglish": "Turkish",
+    "NameNative": "Türkçe"
+  },
+  {
+    "CodeURL": "ts",
+    "NameEnglish": "Tsonga",
+    "NameNative": "Xitsonga"
+  },
+  {
+    "CodeURL": "tt",
+    "NameEnglish": "Tatar",
+    "NameNative": "татарча/tatarça"
+  },
+  {
+    "CodeURL": "tum",
+    "NameEnglish": "Tumbuka",
+    "NameNative": "chiTumbuka"
+  },
+  {
+    "CodeURL": "tw",
+    "NameEnglish": "Twi",
+    "NameNative": "Twi"
+  },
+  {
+    "CodeURL": "ty",
+    "NameEnglish": "Tahitian",
+    "NameNative": "Reo Mā`ohi"
+  },
+  {
+    "CodeURL": "tyv",
+    "NameEnglish": "Tuvinian",
+    "NameNative": "тыва дыл"
+  },
+  {
+    "CodeURL": "udm",
+    "NameEnglish": "Udmurt",
+    "NameNative": "удмурт"
+  },
+  {
+    "CodeURL": "ug",
+    "NameEnglish": "Ughyur",
+    "NameNative": "ئۇيغۇرچە"
+  },
+  {
+    "CodeURL": "uk",
+    "NameEnglish": "Ukranian",
+    "NameNative": "українська"
+  },
+  {
+    "CodeURL": "ur",
+    "NameEnglish": "Urdu",
+    "NameNative": "اردو"
+  },
+  {
+    "CodeURL": "uz",
+    "NameEnglish": "Uzbek",
+    "NameNative": "oʻzbekcha"
+  },
+  {
+    "CodeURL": "ve",
+    "NameEnglish": "Venda",
+    "NameNative": "Tshivenda"
+  },
+  {
+    "CodeURL": "vec",
+    "NameEnglish": "Venetian",
+    "NameNative": "vèneto"
+  },
+  {
+    "CodeURL": "vep",
+    "NameEnglish": "Veps",
+    "NameNative": "vepsän kel’"
+  },
+  {
+    "CodeURL": "vi",
+    "NameEnglish": "Vietnamese",
+    "NameNative": "Tiếng Việt"
+  },
+  {
+    "CodeURL": "vls",
+    "NameEnglish": "Vlaams",
+    "NameNative": "West-Vlams"
+  },
+  {
+    "CodeURL": "vo",
+    "NameEnglish": "Volapük",
+    "NameNative": "Volapük"
+  },
+  {
+    "CodeURL": "wa",
+    "NameEnglish": "Walloon",
+    "NameNative": "walon"
+  },
+  {
+    "CodeURL": "war",
+    "NameEnglish": "Waray",
+    "NameNative": "Winaray"
+  },
+  {
+    "CodeURL": "wo",
+    "NameEnglish": "Wolof",
+    "NameNative": "Wolof"
+  },
+  {
+    "CodeURL": "wuu",
+    "NameEnglish": "Wuu Chinese",
+    "NameNative": "吴语"
+  },
+  {
+    "CodeURL": "xal",
+    "NameEnglish": "Kalmyk",
+    "NameNative": "хальмг"
+  },
+  {
+    "CodeURL": "xh",
+    "NameEnglish": "Xhosa",
+    "NameNative": "isiXhosa"
+  },
+  {
+    "CodeURL": "xmf",
+    "NameEnglish": "Mingrelian",
+    "NameNative": "მარგალური"
+  },
+  {
+    "CodeURL": "yi",
+    "NameEnglish": "Yiddish",
+    "NameNative": "ייִדיש"
+  },
+  {
+    "CodeURL": "yo",
+    "NameEnglish": "Yoruba",
+    "NameNative": "Yorùbá"
+  },
+  {
+    "CodeURL": "za",
+    "NameEnglish": "Zhuang",
+    "NameNative": "Vahcuengh"
+  },
+  {
+    "CodeURL": "zea",
+    "NameEnglish": "Zeeuws",
+    "NameNative": "Zeêuws"
+  },
+  {
+    "CodeURL": "zh",
+    "NameEnglish": "Chinese",
+    "NameNative": "中文"
+  },
+  {
+    "CodeURL": "zh-classical",
+    "NameEnglish": "Chinese Classical",
+    "NameNative": "文言"
+  },
+  {
+    "CodeURL": "zh-min-nan",
+    "NameEnglish": "Min Nan Chinese",
+    "NameNative": "Bân-lâm-gú"
+  },
+  {
+    "CodeURL": "zh-yue",
+    "NameEnglish": "Cantonese",
+    "NameNative": "粵語"
+  },
+  {
+    "CodeURL": "zu",
+    "NameEnglish": "Zulu",
+    "NameNative": "isiZulu"
+  },
+  {
+    "CodeURL": "zh-hans",
+    "NameEnglish": "Simplified Chinese",
+    "NameNative": "中文（简体)"
+  },
+  {
+    "CodeURL": "zh-hant",
+    "NameEnglish": "Traditional Chinese",
+    "NameNative": "中文（繁體）"
+  },
+  {
+    "CodeURL": "zh-tw",
+    "NameEnglish": "Traditional Chinese (Taiwan)",
+    "NameNative": "中文（台灣）"
+  },
+  {
+    "CodeURL": "zh-hk",
+    "NameEnglish": "Traditional Chinese (Hong Kong)",
+    "NameNative": "中文（香港）"
+  },
+  {
+    "CodeURL": "zh-mo",
+    "NameEnglish": "Traditional Chinese (Macau)",
+    "NameNative": "中文（澳門）"
+  },
+  {
+    "CodeURL": "zh-sg",
+    "NameEnglish": "Simplified Chinese (Singapore)",
+    "NameNative": "中文（新加坡）"
+  },
+  {
+    "CodeURL": "zh-cn",
+    "NameEnglish": "Simplified Chinese (China)",
+    "NameNative": "中文（中国大陆)"
+  }
+]

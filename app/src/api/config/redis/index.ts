@@ -5,7 +5,7 @@ const redisConnectionString = process.env.REDIS_CONNECTION_STRING;
 
 // connect to redis
 const nodeEnv = process.env.NODE_ENV || null;
-let host: string = '';
+let host = '';
 if (nodeEnv === 'development') {
   host = 'localhost';
 } else {

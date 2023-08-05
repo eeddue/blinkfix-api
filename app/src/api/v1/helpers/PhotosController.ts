@@ -8,7 +8,7 @@ import { ImageEstablishment } from '../../config/mdb';
 import { IGetUserAuthInfoRequest } from '../interfaces/request.interface';
 const jwtSecret = process.env.JWT_ACCESS_SECRET || 'test';
 
-var storageMainImage = multer.diskStorage({
+const storageMainImage = multer.diskStorage({
   destination: imagePath,
 
   filename: async function (req: any, file, cb) {
@@ -164,7 +164,7 @@ var storageMainImage = multer.diskStorage({
     }
   },
 });
-var storageProfileDocumentImage = multer.diskStorage({
+const storageProfileDocumentImage = multer.diskStorage({
   destination: imagePath + '/documents/',
   filename: async function (req: any, file, cb) {
     console.log(file);
@@ -254,7 +254,7 @@ var storageProfileDocumentImage = multer.diskStorage({
   },
 });
 
-var storageProfileImage = multer.diskStorage({
+const storageProfileImage = multer.diskStorage({
   destination: imagePath + '/profile/',
   filename: async function (req: IGetUserAuthInfoRequest, file, cb) {
     console.log(file);
@@ -367,7 +367,7 @@ var storageProfileImage = multer.diskStorage({
     }
   },
 });
-var storageCommonImage = multer.diskStorage({
+const storageCommonImage = multer.diskStorage({
   destination: imagePath + '/common/',
   filename: async function (req: IGetUserAuthInfoRequest, file, cb) {
     console.log(file);
@@ -434,7 +434,7 @@ var storageCommonImage = multer.diskStorage({
     }
   },
 });
-var storageCommonRecipesImage = multer.diskStorage({
+const storageCommonRecipesImage = multer.diskStorage({
   destination: imagePath + '/recipes/',
   filename: async function (req: IGetUserAuthInfoRequest, file, cb) {
     console.log(file);

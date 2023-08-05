@@ -8,6 +8,7 @@ import { getOrders, updateOrder } from '../controllers/orders';
 import { getEmployees, getProviderEmployees } from '../controllers/employees';
 import { createNotification, deleteNotification, getNotifications } from '../controllers/notifications';
 import { getChat, getChats, sendChatMessages } from '../controllers/chats';
+import { getAllTransactions } from '../controllers/transactions';
 
 const router = Router();
 
@@ -42,5 +43,18 @@ router.patch('/chats/:userId/messages', sendChatMessages);
 router.get('/notifications', getNotifications);
 router.post('/notifications', createNotification);
 router.delete('/notifications/:notificationId', deleteNotification);
+
+//transactions
+router.get('/transactions', getAllTransactions);
+
+//contact us
+router.post('/contact', async (req, res) => {
+  const { email, phone, first_name, last_name } = req.body;
+  try {
+    //send emails
+  } catch (error) {
+    return res.status(500).json({ msg: error.message });
+  }
+});
 
 export { router as DashboardRouter };

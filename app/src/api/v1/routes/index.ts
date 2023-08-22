@@ -8,6 +8,7 @@ import RatingRouter from './Rating';
 import swaggerUi from 'swagger-ui-express';
 import { swaggerDocs } from '../docs/swagger';
 import { uploadStripeImage } from '../controllers/order/payment';
+import { io } from '../../..';
 
 let rootRouter = Router();
 rootRouter.use('/user', UserRouter);
@@ -18,7 +19,8 @@ rootRouter.use('/profile', ProfileRouter);
 rootRouter.use('/rating', RatingRouter);
 
 rootRouter.get('/hello', (req, res) => {
-  res.send('File uploaded');
+  io.emit('testnotification', 'hello');
+  res.send('success');
 });
 
 export { rootRouter as RootRouter };

@@ -60,6 +60,10 @@ io.on('connection', (socket) => {
     //to = an array of people you want to send the notification to
     io.to(data.to.map((person) => getUser(person.userId).socketId)).emit('receive-notification', data);
   });
+  socket.on('ping', (data) => {
+    //to = an array of people you want to send the notification to
+    console.log(new Date().toLocaleTimeString());
+  });
 
   //send and receive messages
   socket.on('send-message', (data) => {
@@ -69,7 +73,7 @@ io.on('connection', (socket) => {
   //remove online users on disconnection
   socket.on('disconnect', () => {
     console.log('User disconnected');
-    removeUser(socket.id);
+    // removeUser(socket.id);
     io.emit('users', onlineUsers);
   });
 });

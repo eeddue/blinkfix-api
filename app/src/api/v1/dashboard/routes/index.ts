@@ -9,6 +9,7 @@ import { getEmployees, getProviderEmployees } from '../controllers/employees';
 import { createNotification, deleteNotification, getNotifications } from '../controllers/notifications';
 import { getChat, getChats, sendChatMessages } from '../controllers/chats';
 import { getAllTransactions } from '../controllers/transactions';
+import { GetChatMessages, GetUserChats, SendMessage } from '../controllers/messages';
 
 const router = Router();
 
@@ -46,6 +47,11 @@ router.delete('/notifications/:notificationId', deleteNotification);
 
 //transactions
 router.get('/transactions', getAllTransactions);
+
+//messages
+router.get('/messages/:chatId', GetChatMessages);
+router.get('/messages/chats/:userId', GetUserChats);
+router.post('/messages', SendMessage);
 
 //contact us
 router.post('/contact', async (req, res) => {

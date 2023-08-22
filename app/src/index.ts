@@ -55,19 +55,9 @@ io.on('connection', (socket) => {
     console.log(userId);
   });
 
-  //sending notifications
-  socket.on('send-notification', (data) => {
-    //to = an array of people you want to send the notification to
-    io.to(data.to.map((person) => getUser(person.userId).socketId)).emit('receive-notification', data);
-  });
-  socket.on('ping', (data) => {
-    //to = an array of people you want to send the notification to
-    console.log(new Date().toLocaleTimeString());
-  });
-
-  //send and receive messages
+  //sending messages
   socket.on('send-message', (data) => {
-    io.to(getUser(data.receiver).socketId)?.emit('receive-message', { ...data, createdAt: Date.now() });
+    io.to(getUser(data.receiver).socketId).emit('receive-message', data);
   });
 
   //remove online users on disconnection

@@ -32,7 +32,10 @@ class MailerController {
   }
 
   async sendEmail(options: Mail.Options) {
-    let info = await this.transporter.sendMail({ from: 'blinkfix support <info@blinkfix.me>', ...options });
+    let info = await this.transporter.sendMail({
+      from: options.from || 'blinkfix support <info@blinkfix.me>',
+      ...options,
+    });
     const res = this.transporter.sendMail(options, (error, info) => {
       if (error) {
         throw new Error(error.message);

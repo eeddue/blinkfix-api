@@ -42,8 +42,6 @@ export const deleteNotification = async (req, res) => {
 export const getUserNotifications = async (req, res) => {
   const { userId } = req.params;
   try {
-    if (!userId) return res.sendStatus(404);
-
     const notifications = await Notification.find({ to: { $in: [userId] } });
     return res.status(200).json({ notifications });
   } catch (error) {
